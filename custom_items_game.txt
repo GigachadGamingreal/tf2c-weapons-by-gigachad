@@ -2236,64 +2236,55 @@
 			"mouse_pressed_sound"	"ui/item_thick_metal_pickup.wav"
 			"drop_sound"		"ui/item_thick_metal_drop.wav"
 		}
-		"30010" // placeholder for next one - ! playtest part 2? !
+		"30010" // civ umbrella bullet resist
 		{
-			"name"	"seride_placeholder1"
-			"item_class"	"tf_weapon_wrench"
-			"tags"
+			"name"				"resister"
+			"item_name"			"Death Preventionist"
+			"item_type_name"	"#TF_Weapon_Umbrella"
+			"item_description"	"Boost gives some Bullet Resistance.  I may be preventing deaths, after all!"
+			"item_quality"		"normal"
+			"item_class"	"tf2c_weapon_umbrella"
+			"item_slot"		"melee"
+			"used_by_classes"
 			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_destroy_sappers"		"1"
-				"can_be_festivized"		"1"
+				"Civilian"	"1"
 			}
-			//"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Wrench"
-			"item_name"	"seride_placeholder1"
-			"item_description"	"placeholder!"
-			"item_slot"	"melee"
-			"item_quality"	"unique"
-			"item_logname"	"eureka_effect"
-			"item_iconname"	"eureka_effect"
-			"propername"	"1"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_wrenchmotron/c_drg_wrenchmotron"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 			"50"
-			"model_player"	"models/workshop/weapons/c_models/c_drg_wrenchmotron/c_drg_wrenchmotron.mdl"
-			"attach_to_hands" "1"
-			//"used_by_classes"
-			//{
-			//	"engineer"	"1"
-			//}
+			"model_player"		"models/weapons/v_models/v_umbrella_civilian.mdl"
+			"model_world"		"models/weapons/w_models/w_umbrella.mdl"
+			"anim_slot"			"melee"
+			"attach_to_hands"	"2"
 			"static_attrs"
 			{
-				"min_viewmodel_offset"					"10 -2 -9"
+				"min_viewmodel_offset"	"10 0 -7"
 			}
 			"attributes"
 			{
-                "wrench explain"        "1"
-			}
-			"visuals"
-			{
-				"attached_particlesystems"
+				"civ boost cond override"
 				{
-					"0"
-					{
-						"system"	"drg_wrenchmotron_idle"
-						"attachment" "electrode_0"
-					}
+					"attribute_class"	"add_civ_boost_override"
+					"value"					"TF_COND_MEDIGUN_UBER_BULLET_RESIST 1.25"
 				}
-				"attached_models_festive"
+				"umbrella recharge rate increased"
 				{
-					"0"
-					{
-						"model"	"models/workshop/weapons/c_models/c_drg_wrenchmotron/c_drg_wrenchmotron_festivizer.mdl"
-					}
+					"attribute_class" "umbrella_recharge_rate"
+					"value"				"0.65"
+				}
+				"heal on hit for rapidfire"
+				{
+					"attribute_class" "add_onhit_addhealth"
+					"value"				"25"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class" "mult_dmgtaken_from_explosions"
+					"value"				"1.35"
 				}
 			}
-			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
-			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"item_logname"	"umbrella"
+			"item_iconname"	"umbrella"
+			"image_inventory"		"backpack/weapons/w_models/w_umbrella"
+			"mouse_pressed_sound"	"ui/item_umbrella_pickup.wav"
+			"drop_sound"			"ui/item_hat_drop.wav"
 		}
 	}
 }
