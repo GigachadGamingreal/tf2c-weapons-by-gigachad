@@ -2085,18 +2085,18 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
-			"item_name"	"Nearing Danger"
-			"item_description"	"Show these cowards what a real Texan fights like! We don't need a whole target shooter range for this one!"
+			"item_name"	"Nearin' Danger"
+			"item_description"	"Show these cowards what a real Texan fights like! We don't need a whole target shootin' range for this one!"
 			"item_slot"	"melee"
-			"item_quality"	"unique"
-			"item_logname"	"eureka_effect"
-			"item_iconname"	"eureka_effect"
+			"item_quality"	"normal"
+			"item_logname"	"jag"
+			"item_iconname"	"jag"
 			"propername"	"1"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_drg_wrenchmotron/c_drg_wrenchmotron"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_jag/c_jag"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"inspect_panel_dist" 			"50"
-			"model_player"	"models/workshop/weapons/c_models/c_drg_wrenchmotron/c_drg_wrenchmotron.mdl"
+			"model_player"	"models/workshop/weapons/c_models/c_jag/c_jag.mdl"
 			"attach_to_hands" "1"
 			"used_by_classes"
 			{
@@ -2111,13 +2111,23 @@
 				"engy sentry damage bonus"
                 {
                     "attribute_class"    "mult_engy_sentry_damage"
-                    "value"                "1.35"
+                    "value"                "1.40"
                 }
-                "engy sentry radius increased"
+				"closerange backattack minicrits"
+				{
+					"attribute_class"	"closerange_backattack_minicrits"
+					"value"					"1"
+				}
+				"engy sentry radius increased"
                 {
                     "attribute_class"    "mult_sentry_range"
-                    "value"                "0.5"
+                    "value"                "0.45"
                 }
+				"mark for death on building pickup"
+				{
+					"attribute_class"	"mark_for_death_on_building_pickup"
+					"value"					"1"
+				}
                 "wrench explain"        "1"
 			}
 			"visuals"
@@ -2141,7 +2151,92 @@
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
-		"30009" // placeholder for next one - ! playtest part 2? !
+		"30009" // serider_airblaster
+		{
+			"name"	"serider_airblaster"
+			"item_class"	"tf_weapon_flamethrower"
+			"tags"
+			{
+				"can_deal_damage"	"1"
+				"can_deal_critical_damage"	"1"
+	 			"can_extinguish"	"1"
+				"can_reflect_projectiles"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"is_flamethrower"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_FlameThrower"
+			"item_name"	"The Mechanizer"
+			"item_description"	"Airblasting a teammate grants THEM and YOU a speedboost for a few seconds! Airblast recharge time decreased by 25%! You can still damage people by going in their face and igniting them!"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"item_logname"	"flamethrower"
+			"item_iconname"	"flamethrower"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_degreaser/c_degreaser"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"91"
+			"model_player"	"models/workshop/weapons/c_models/c_degreaser/c_degreaser.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"attributes"
+			{
+				"mult airblast refire time"
+				{
+					"attribute_class" "mult_airblast_refire_time"
+					"value"			  	"0.5"
+				}
+				"airblast pushback scale"
+				{
+					"attribute_class" "airblast_pushback_scale"
+					"value"				"2.5"
+				}
+				"airblast_give_teammate_speed_boost"
+				{
+					"attribute_class" "airblast_give_teammate_speed_boost"
+					"value"				"1"
+				}
+				 "airblast cost decreased"
+                {
+                    "attribute_class"    "mult_airblast_cost"
+                    "value"                "0.85"
+                }
+				"damage penalty"
+                {
+					"attribute_class" "mult_dmg"
+                    "value"                "0"
+                }
+				"damage force increase"
+				{
+					"attribute_class" "damage_force_reduction"
+					"value"				"1.2"
+				}
+			}
+			"visuals"
+			{
+				"attached_models"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_degreaser/c_degreaser_pilotlight.mdl"
+					}
+				}
+				"sound_single_shot"	"Weapon_Degreaser.FireStart"
+				"sound_special1"	"Weapon_Degreaser.FireLoop"
+				"sound_burst"	"Weapon_Degreaser.FireLoopCrit"
+				"sound_special3"	"Weapon_Degreaser.FireEnd"
+			}
+			"mouse_pressed_sound"	"ui/item_thick_metal_pickup.wav"
+			"drop_sound"		"ui/item_thick_metal_drop.wav"
+		}
+		"30010" // placeholder for next one - ! playtest part 2? !
 		{
 			"name"	"seride_placeholder1"
 			"item_class"	"tf_weapon_wrench"
