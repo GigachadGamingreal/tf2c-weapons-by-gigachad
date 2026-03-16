@@ -2167,7 +2167,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_FlameThrower"
 			"item_name"	"The Mechanizer"
-			"item_description"	"Airblasting a teammate grants THEM and YOU a speedboost for a few seconds! Airblast recharge time decreased by 25%! You can still damage people by going in their face and igniting them!"
+			"item_description"	"Airblasting a teammate grants THEM and YOU a speedboost for a few seconds! Airblast recharge time decreased by 25%! You can still sometimes damage people by going in their face and igniting them!"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"item_logname"	"flamethrower"
@@ -2196,18 +2196,33 @@
 				"airblast pushback scale"
 				{
 					"attribute_class" "airblast_pushback_scale"
-					"value"				"2.5"
+					"value"				"4"
 				}
 				"airblast_give_teammate_speed_boost"
 				{
 					"attribute_class" "airblast_give_teammate_speed_boost"
-					"value"				"1"
+					"value"				"3"
 				}
 				 "airblast cost decreased"
                 {
                     "attribute_class"    "mult_airblast_cost"
                     "value"                "0.85"
                 }
+				"extinguish restores health"
+				{
+					"attribute_class" "extinguish_restores_health"
+					"value"				"80"
+				}
+				"move speed bonus"
+				{
+					"attribute_class" "mult_player_movespeed"
+					"value"				"1.1"
+				}
+				"major increased jump height"
+				{
+					"attribute_class" "major_jump_height"
+					"value"				"1.15"
+				}
 				"damage penalty"
                 {
 					"attribute_class" "mult_dmg"
@@ -2262,17 +2277,22 @@
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
-					"value"					"TF_COND_MEDIGUN_UBER_BULLET_RESIST 1.25"
+					"value"					"TF_COND_MEDIGUN_UBER_BULLET_RESIST 1.45"
 				}
 				"umbrella recharge rate increased"
 				{
 					"attribute_class" "umbrella_recharge_rate"
-					"value"				"0.65"
+					"value"				"0.5"
 				}
 				"heal on hit for rapidfire"
 				{
 					"attribute_class" "add_onhit_addhealth"
 					"value"				"25"
+				}
+				"crit from behind"
+				{
+					"attribute_class" "crit_from_behind"
+					"value"				"1"
 				}
 				"dmg taken from blast increased"
 				{
@@ -2364,6 +2384,300 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"30012"
+		{
+			"name" "comboer"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"Well sider"
+			"item_description" "Switch, shoot, and change back. Reloading is not the strategy now, is it?"
+			"item_slot"	"secondary"
+			"item_logname"	"reserve_shooter"
+			"item_iconname"	"reserve_shooter"
+			"show_in_armory"	"1"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "45"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_reserve_shooter/c_reserve_shooter"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"used_by_classes"
+			{
+				"pyro"		"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"weapon_stattrak_module_scale"				"0.608"				
+			}
+			"model_player"	"models/workshop/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl"
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Reserve_Shooter.Single"
+				"sound_burst"		"Weapon_Reserve_Shooter.SingleCrit"
+			}
+			"attributes"
+			{
+				"switch from wep deploy time decreased"
+				{
+					"attribute_class"	"mult_switch_from_wep_deploy_time"
+					"value"	"0.7"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"	"25"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"					"1.8"
+				}
+				"maxammo secondary reduced"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value" "0.5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value"				"0"
+				}
+				"dmg from melee increased"
+				{
+					"attribute_class" "dmg_from_melee"
+					"value"				"3"
+				}
+				"Reload time increased"
+				{
+					"attribute_class" "mult_reload_time"
+					"value"				"1.7"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30013"
+		{
+			"name" "scheduler"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_fireaxe"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"		"1"
+			}
+			"item_logname"	"powerjack"
+			"item_iconname"	"powerjack"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_SledgeHammer"
+			"item_name"	"Scheduler Problemist"
+			"item_description" "Oh God! I am running late!"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_powerjack/c_powerjack.mdl"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "65"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 2 -9"
+				"weapon_stattrak_module_scale"			"0.6"
+			}
+			"attributes"
+			{
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
+				}
+				"Set DamageType Ignite"
+				{
+					"attribute_class" "set_dmgtype_ignite"
+					"value"				"1"
+				}
+				"mod see enemy health"
+				{
+					"attribute_class" "see_enemy_health"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.75"
+				}
+				"heal on kill"
+				{
+					"attribute_class" "heal_on_kill"
+					"value"				"100"
+				}
+				"damage applies to sappers"
+				{
+					"attribute_class" "set_dmg_apply_to_sapper"
+					"value"				"500"
+				}
+				"tickle enemies wielding same weapon"
+				{
+					"attribute_class" "tickle_enemies_wielding_same_weapon"
+					"value"				"1"
+				}
+				"active health degen"
+				{
+					"attribute_class"	"active_item_health_regen"
+					"value"				"-5"
+				}
+				"single wep holster time increased"
+				{
+					"attribute_class" "mult_switch_from_wep_deploy_time"
+					"value"				"0.5"
+				}
+				"health from healers reduced"
+				{
+					"attribute_class"	"mult_health_fromhealers"
+					"value"				"0.2"
+				}
+				"health from packs decreased"
+				{
+					"attribute_class" "mult_health_frompacks"
+					"value"				"0.2"
+				}
+				"no crit vs nonburning"
+				{
+					"attribute_class" "set_nocrit_vs_nonburning"
+					"value"				"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30014"
+		{
+			"name" "upgrader"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_sentry_revenge"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_description" "You will make bacon out of your enemies with this weapon! (NO BACON INCLUDED!)"
+			"item_name"	"The Grand Bacon"
+			"item_slot"	"primary"
+			"item_quality"	"normal"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"item_logname"	"frontier_justice"
+			"item_iconname"	"frontier_kill"
+			"image_inventory"	"backpack/weapons/c_models/c_frontierjustice/c_frontierjustice"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_frontierjustice/c_frontierjustice.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "60"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"attributes"
+			{
+				"engy sentry fire rate increased"
+				{
+					"attribute_class"	"mult_sentry_firerate"
+					"value"					"0.77"
+				}
+				"mark for death"
+				{
+					"attribute_class"	"mark_for_death"
+					"value"					"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class" "mult_postfiredelay"
+					"value"				"0.7"
+				}
+				"auto fires full clip"
+				{
+					"attribute_class" "auto_fires_full_clip"
+					"value"				"1"
+				}
+				"reveal disguised victim on hit"
+				{
+					"attribute_class" "reveal_disguised_victim_on_hit"
+					"value"				"1"
+				}
+				"bombinomicon effect on death"
+				{
+					"attribute_class" "bombinomicon_effect_on_death"
+					"value"				"1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"				 "0.3"
+				}
+				"Reload time increased"
+				{
+					"attribute_class" "mult_reload_time"
+					"value"				"1.55"
+				}
+				"dmg taken from fire increased"
+				{
+					"attribute_class" "mult_dmgtaken_from_fire"
+					"value" 			"1.3"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value"				"0"
+				}
+				"engy building health bonus"
+				{
+					"attribute_class"	"mult_engy_building_health"
+					"value"					"0.85"
+				}
+				"maxammo metal reduced"
+				{
+					"attribute_class" "mult_maxammo_metal"
+					"value"				"0.85"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_FrontierJustice.Single"
+				"sound_burst"	"Weapon_FrontierJustice.SingleCrit"
+			}			
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
 	}
 }
