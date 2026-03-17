@@ -2565,11 +2565,6 @@
 					"attribute_class" "set_dmg_apply_to_sapper"
 					"value"				"500"
 				}
-				"tickle enemies wielding same weapon"
-				{
-					"attribute_class" "tickle_enemies_wielding_same_weapon"
-					"value"				"1"
-				}
 				"active health degen"
 				{
 					"attribute_class"	"active_item_health_regen"
