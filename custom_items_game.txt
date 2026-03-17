@@ -1829,7 +1829,7 @@
 			"attach_to_hands"		"2"
 			"static_attrs"
 			{
-				"min_viewmodel_offset"	"30 18 15"
+				"min_viewmodel_offset"	"10 0 -6"
 			}
 			"attributes"
 			{
@@ -2527,7 +2527,6 @@
 				"soldier" "1"
 				"demoman" "1"
 				"engineer" "1"
-				"Civilian" "1"
 			}
 			"static_attrs"
 			{
