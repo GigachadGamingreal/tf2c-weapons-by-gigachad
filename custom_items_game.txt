@@ -409,6 +409,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Gloves"
 			"item_name"	"#TF_Unique_Gloves_of_Running_Urgently"
+			"item_description" "Killing an enemy grants 5 seconds of speed boost! HERE I COME!"
 			"item_slot"	"melee"
 			"item_logname"	"gloves_running_urgently"
 			"item_iconname"	"gloves_running_urgently"
@@ -426,8 +427,7 @@
 			"static_attrs"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
-				"speed_boost_on_kill"			"3"
-				"mod_maxhealth_drain_rate"		"10.0"
+				"speed_boost_on_kill"			"5"
 			}
 			"attributes"
 			{
@@ -439,7 +439,7 @@
 				"single wep holster time increased"
 				{
 					"attribute_class"	"mult_switch_from_wep_deploy_time"
-					"value"				"1.5"
+					"value"				"1.2"
 				}
 			}
 			"hide_bodygroups_deployed_only"	"1"
@@ -1803,30 +1803,40 @@
 		"30003" // test - test
 		{
 			"name"				"serider_test_test"
-			"item_name"			"serider_test_gun"
-			"item_description"	"#TF_Weapon_Revolver_Desc"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_name"			"Self-Shooter"
+			"item_description"	"A new way to quickly get rid of yourself! (Does no damage to enemies!)"
 			"item_quality"		"normal"
-
+			"item_logname" "samrevolver"
+			"item_iconname" "samrevolver"
 			"item_class"	"tf_weapon_revolver"
 			"item_slot"		"secondary"
 			"used_by_classes"
 			{
 				"Spy"		"1"
 			}
-
-			"model_player"		"models/weapons/v_models/v_revolver_spy.mdl"
-			"model_world"		"models/weapons/w_models/w_revolver.mdl"
+			"propername"	"1"
+			"attach_to_hands" "1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
 			"attach_to_hands"		"2"
 			"static_attrs"
 			{
-				"min_viewmodel_offset"	"10 0 -6"
+				"min_viewmodel_offset"	"30 18 15"
 			}
 			"attributes"
 			{
 				"override projectile type"
 				{
 					"attribute_class"	"override_projectile_type"
-					"value"				"4"
+					"value"				"17"
 				}
 				"blast dmg to self increased"
 				{
@@ -1856,18 +1866,29 @@
 				"apply self knockback"
 				{
 					"attribute_class"	"apply_self_knockback"
-					"value"				"200"
+					"value"				"400"
 				}
-				"Blast radius decreased"
+				"cloak consume rate decreased"
 				{
-					"attribute_class"	"mult_explosion_radius"
-					"value"	"0"
+					"attribute_class" "mult_cloak_meter_consume_rate"
+					"value"				"0.60"
+				}
+				"health from packs increased"
+				{
+					"attribute_class" "mult_health_frompacks"
+					"value"				"1.2"
+				}
+				"move speed bonus"
+				{
+					"attribute_class" "mult_player_movespeed"
+					"value"				"1.1"
 				}
 			}
-
-			"image_inventory"		"backpack/weapons/w_models/w_revolver"
+			"image_inventory"		"backpack/workshop/weapons/c_models/c_ttg_sam_gun/c_ttg_sam_gun"
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"			"ui/item_light_gun_drop.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+			"model_player"	"models/workshop/weapons/c_models/c_ttg_sam_gun/c_ttg_sam_gun.mdl"
+			"xifier_class_remap"	"TTG Sam Revolver"
 		}
 		"30004" // test - test
 		{
@@ -2417,6 +2438,8 @@
 			"used_by_classes"
 			{
 				"pyro"		"1"
+				"soldier"	"1"
+				"heavy"		"1"
 			}
 			"static_attrs"
 			{
@@ -2485,7 +2508,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SledgeHammer"
 			"item_name"	"Scheduler Problemist"
-			"item_description" "Oh God! I am running late!"
+			"item_description" "Oh God! I am running late! (Upgrading and using it as a wrench does nothing when playing Engineer)"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
 			"image_inventory_size_w"		"128"
@@ -2500,6 +2523,11 @@
 			"used_by_classes"
 			{
 				"pyro"	"1"
+				"scout" "1"
+				"soldier" "1"
+				"demoman" "1"
+				"engineer" "1"
+				"Civilian" "1"
 			}
 			"static_attrs"
 			{
@@ -2676,6 +2704,91 @@
 				"sound_single_shot"	"Weapon_FrontierJustice.Single"
 				"sound_burst"	"Weapon_FrontierJustice.SingleCrit"
 			}			
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30018"
+		{
+			"name" "comboerprimary"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_shotgun"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+				"can_deal_taunt_damage"		"1"
+			}
+			"item_type_name"	"#TF_Weapon_Shotgun"
+			"item_name"	"Well sider"
+			"item_description" "Switch, shoot, and change back. Reloading is not the strategy now, is it?"
+			"item_slot"	"primary"
+			"item_logname"	"reserve_shooter"
+			"item_iconname"	"reserve_shooter"
+			"show_in_armory"	"1"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "45"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_reserve_shooter/c_reserve_shooter"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"weapon_stattrak_module_scale"				"0.608"				
+			}
+			"model_player"	"models/workshop/weapons/c_models/c_reserve_shooter/c_reserve_shooter.mdl"
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Reserve_Shooter.Single"
+				"sound_burst"		"Weapon_Reserve_Shooter.SingleCrit"
+			}
+			"attributes"
+			{
+				"switch from wep deploy time decreased"
+				{
+					"attribute_class"	"mult_switch_from_wep_deploy_time"
+					"value"	"0.7"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"	"25"
+				}
+				"damage bonus"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"					"1.8"
+				}
+				"maxammo secondary reduced"
+				{
+					"attribute_class"	"mult_maxammo_secondary"
+					"value" "0.5"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value"				"0"
+				}
+				"dmg from melee increased"
+				{
+					"attribute_class" "dmg_from_melee"
+					"value"				"3"
+				}
+				"Reload time increased"
+				{
+					"attribute_class" "mult_reload_time"
+					"value"				"1.7"
+				}
+			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
