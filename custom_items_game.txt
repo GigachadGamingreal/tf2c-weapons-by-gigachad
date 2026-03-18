@@ -1651,7 +1651,7 @@
 			"name"				"TF_WEAPON_BETA_SNIPERRIFLE_1"
 			"item_name"			"Beta Sniper Rifle 1"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
-			"item_description"	"NON-FUNCTIONAL! ( ! PLACEHOLDER ! )"
+			"item_description"	"NON-FUNCTIONAL! ( PLACEHOLDER )"
 			"item_quality"		"collectors"
 
 			"item_class"	"tf_weapon_sniperrifle"
