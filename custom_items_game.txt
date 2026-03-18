@@ -419,7 +419,6 @@
 			}
 			"xifier_class_remap"	"Iron Curtain"
 		}
-
 		"paintkit_base"
 		{
 			"static_attrs"
@@ -1612,6 +1611,84 @@
 			"image_inventory"		"backpack/player/items/spy/firesuit"
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"			"ui/item_light_gun_drop.wav"
+		}
+		"30003" // MVM Sniper Rifle - alt weapon
+		{
+			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
+			"item_name"			"MVM Sniper Rifle"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one."
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+			}
+			"attributes"
+			{
+				"mod set sniper laser sight"
+				{
+					"attribute_class"	"mod_set_sniper_laser_sight"
+					"value" "1"
+				}
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
+		"30004" // Beta Sniper Rifle 1 - beta content
+		{
+			"name"				"TF_WEAPON_BETA_SNIPERRIFLE_1"
+			"item_name"			"Beta Sniper Rifle 1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"NON-FUNCTIONAL! ( ! PLACEHOLDER ! )"
+			"item_quality"		"collectors"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+			}
+			"attributes"
+			{
+				"mult sniper charge after bodyshot"
+				{
+					"attribute_class"	"mult_sniper_charge_after_bodyshot"
+					"value" "1.25"
+				}
+				"mult sniper charge after headshot"
+				{
+					"attribute_class"	"mult_sniper_charge_after_headshot"
+					"value" "1.45"
+				}
+				"mult sniper charge after miss"
+				{
+					"attribute_class"	"mult_sniper_charge_after_miss"
+					"value" "0.35"
+				}
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
 		}
 	}
 }
