@@ -419,7 +419,6 @@
 			}
 			"xifier_class_remap"	"Iron Curtain"
 		}
-
 		"paintkit_base"
 		{
 			"static_attrs"
@@ -1526,64 +1525,7 @@
 			"name"	"Iron Curtain"
 			"prefab"	"iron_curtain"
 		}
-		"30001" // LILITH - MINIGUN
-		{
-			"name"						"serider_lilith"
-			"item_class"				"tf_weapon_minigun"
-			"item_slot"					"primary"
-			"show_in_armory"			"0"
-			
-			"item_quality"				"unique"
-			"item_name"					"Lilith"
-			"item_type_name"			"#TF_Weapon_Minigun"
-			"item_description"			"Kill the ones who want peace."
-
-			"image_inventory"		"backpack/weapons/w_models/w_minigun"
-			"model_player"		"models/weapons/v_models/v_minigun_heavy.mdl"
-			"model_world"		"models/weapons/w_models/w_minigun.mdl"
-			"attach_to_hands"			"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"	"10 0 -9"
-				"provide on active"		"1"
-			}
-            "attributes"
-            {
-                "mod mini-crit airborne"
-                {
-                    "attribute_class"    "mini_crit_airborne"
-                    "value"    "1"
-                }
-				"critboost on kill"
-                {
-                    "attribute_class"    "add_onkill_critboost_time"
-                    "value"    "1"
-                }
-                "healing received penalty"
-                {
-                    "attribute_class"    "mult_healing_received"
-                    "value"    "0.6"
-                }
-                "no primary ammo from dispensers while active"
-                {
-                    "attribute_class"    "no_primary_ammo_from_dispensers"
-                    "value"    "1"
-                }
-				"max health additive penalty"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value"		"-150"
-				}
-				"crits_become_minicrits"
-				{
-					"attribute_class"	"crits_become_minicrits"
-					"value"		"1"
-				}
-            }
-			"mouse_pressed_sound"		"#ui/item_crate_drop.wav"
-			"drop_sound"				"#ui/item_crate_pickup.wav"
-		}
-		"30002" // Fire Retardant - beta content
+		"30001" // Fire Retardant - beta content
 		{
 			"name"				"fire_retardant"
 			"item_name"			"Fire Retardant"
@@ -1612,6 +1554,59 @@
 			"image_inventory"		"backpack/player/items/spy/firesuit"
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"			"ui/item_light_gun_drop.wav"
+		}
+		"30002" // MVM Sniper Rifle - serider weapon
+		{
+			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
+			"item_name"			"MVM Sniper Rifle"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one."
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+			}
+			"attributes"
+			{
+				"mod set sniper laser sight"
+				{
+					"attribute_class"	"mod_set_sniper_laser_sight"
+					"value" "1"
+				}
+				"sniper only fire zoomed"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+				"hidden primary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"44"
+				}
+				"hide ammo hud"
+				{
+					"attribute_class"	"hide_ammo_hud"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_special2"	"Weapon_SniperRailgun.NonScoped"
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
 		}
 	}
 }
