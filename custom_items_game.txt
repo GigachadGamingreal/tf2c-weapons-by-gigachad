@@ -1892,10 +1892,10 @@
 		}
 		"30004" // test - test
 		{
-			"name"				"serider_test_test2"
-			"item_name"			"serider_quickfix-like"
+			"name"				"serider_heal"
+			"item_name"			"The sacred healer"
 			"item_type_name"	"#TF_Weapon_Umbrella"
-			"item_description"	"#TF_Weapon_Umbrella_Desc"
+			"item_description"	"Do not ask where I got this thing! It might lower your pay!"
 			"item_quality"		"normal"
 
 			"item_class"	"tf2c_weapon_umbrella"
@@ -1915,11 +1915,6 @@
 			}
 			"attributes"
 			{
-				"umbrella recharge rate increased"
-				{
-					"attribute_class"	"umbrella_recharge_rate"
-					"value"				"0.9"
-				}
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
@@ -1935,10 +1930,10 @@
 		}
 		"30005" // test - test
 		{
-			"name"				"serider_test_test3"
-			"item_name"			"serider_concheror"
+			"name"				"serider_miss"
+			"item_name"			"Dodging player"
 			"item_type_name"	"#TF_Weapon_Umbrella"
-			"item_description"	"#TF_Weapon_Umbrella_Desc"
+			"item_description"	"Umbrella boosted allies have a 75% chance to dodge every time damage is taken!"
 			"item_quality"		"normal"
 
 			"item_class"	"tf2c_weapon_umbrella"
@@ -1958,15 +1953,10 @@
 			}
 			"attributes"
 			{
-				"umbrella recharge rate increased"
-				{
-					"attribute_class"	"umbrella_recharge_rate"
-					"value"				"0.9"
-				}
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
-					"value"				"TF_COND_REGENONDAMAGEBUFF 1"
+					"value"				"TF_COND_OBSCURED_SMOKE 1"
 				}
 			}
 			"item_logname"	"umbrella"
@@ -1978,10 +1968,10 @@
 		}
 		"30006" // test - test
 		{
-			"name"				"serider_test_test4"
-			"item_name"			"serider_uber"
+			"name"				"strategist"
+			"item_name"			"Defense Strategist"
 			"item_type_name"	"#TF_Weapon_Umbrella"
-			"item_description"	"#TF_Weapon_Umbrella_Desc"
+			"item_description"	"Umbrella boost is defensive! Time to waste enemy lives!"
 			"item_quality"		"normal"
 
 			"item_class"	"tf2c_weapon_umbrella"
@@ -2004,7 +1994,12 @@
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
-					"value"				"TF_COND_INVULNERABLE 0.75"
+					"value"				"TF_COND_DEFENSEBUFF 2"
+				}
+				"ubercharge rate bonus for healer"
+				{
+					"attribute_class" "mult_uberchargerate_for_healer"
+					"value"				"2"
 				}
 			}
 			"item_logname"	"umbrella"
