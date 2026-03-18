@@ -1525,7 +1525,134 @@
 			"name"	"Iron Curtain"
 			"prefab"	"iron_curtain"
 		}
-		"30001" // LILITH - MINIGUN
+		"30001" // Fire Retardant - beta content
+		{
+			"name"				"fire_retardant"
+			"item_name"			"Fire Retardant"
+			"item_type_name"	"#TF_Wearable_Suit"
+			"item_description"	"Let's settle this like gentlemen!"
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_wearable"
+			"item_slot"		"secondary"
+			"used_by_classes"
+			{
+				"Spy"	"1"
+			}
+			"attributes"
+			{
+				"dmg taken from fire reduced"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire"
+					"value" "0.10"
+				}
+			}
+			"act_as_wearable"	    "1"
+			"anim_slot"			    "FORCE_NOT_USED"
+			"equip_region"		    "spy_coat"
+            "extra_wearable"	    "models/player/items/spy/spy_flame_suit.mdl"
+			"image_inventory"		"backpack/player/items/spy/firesuit"
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"			"ui/item_light_gun_drop.wav"
+		}
+		"30002" // Beta Sniper Rifle 1 - beta content !! HIDDEN !!
+		{
+			"name"				"TF_WEAPON_BETA_SNIPERRIFLE_1"
+			"item_name"			"Beta Sniper Rifle 1"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"NON-FUNCTIONAL!"
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			//"used_by_classes"
+			//{
+			//	"Sniper"	"1"
+			//}
+
+			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+			}
+			//"attributes"
+			//{
+			//	"mult sniper charge after bodyshot"
+			//	{
+			//		"attribute_class"	"mult_sniper_charge_after_bodyshot"
+			//		"value" "1.25"
+			//	}
+			//	"mult sniper charge after headshot"
+			//	{
+			//		"attribute_class"	"mult_sniper_charge_after_headshot"
+			//		"value" "1.45"
+			//	}
+			//	"mult sniper charge after miss"
+			//	{
+			//		"attribute_class"	"mult_sniper_charge_after_miss"
+			//		"value" "0.35"
+			//	}
+			//}
+			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
+		"30003" // MVM Sniper Rifle - serider weapon
+		{
+			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
+			"item_name"			"MVM Sniper Rifle"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one."
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+			}
+			"attributes"
+			{
+				"mod set sniper laser sight"
+				{
+					"attribute_class"	"mod_set_sniper_laser_sight"
+					"value" "1"
+				}
+				"sniper only fire zoomed"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+				"hidden primary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"44"
+				}
+				"hide ammo hud"
+				{
+					"attribute_class"	"hide_ammo_hud"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_special2"	"Weapon_SniperRailgun.NonScoped"
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
+		"30004" // LILITH - MINIGUN
 		{
 			"name"						"serider_lilith"
 			"item_class"				"tf_weapon_minigun"
@@ -1581,114 +1708,6 @@
             }
 			"mouse_pressed_sound"		"#ui/item_crate_drop.wav"
 			"drop_sound"				"#ui/item_crate_pickup.wav"
-		}
-		"30002" // Fire Retardant - beta content
-		{
-			"name"				"fire_retardant"
-			"item_name"			"Fire Retardant"
-			"item_type_name"	"#TF_Wearable_Suit"
-			"item_description"	"Let's settle this like gentlemen!"
-			"item_quality"		"vintage"
-
-			"item_class"	"tf_wearable"
-			"item_slot"		"secondary"
-			"used_by_classes"
-			{
-				"Spy"	"1"
-			}
-			"attributes"
-			{
-				"dmg taken from fire reduced"
-				{
-					"attribute_class"	"mult_dmgtaken_from_fire"
-					"value" "0.10"
-				}
-			}
-			"act_as_wearable"	    "1"
-			"anim_slot"			    "FORCE_NOT_USED"
-			"equip_region"		    "spy_coat"
-            "extra_wearable"	    "models/player/items/spy/spy_flame_suit.mdl"
-			"image_inventory"		"backpack/player/items/spy/firesuit"
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"			"ui/item_light_gun_drop.wav"
-		}
-		"30003" // MVM Sniper Rifle - alt weapon
-		{
-			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
-			"item_name"			"MVM Sniper Rifle"
-			"item_type_name"	"#TF_Weapon_SniperRifle"
-			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one."
-			"item_quality"		"vintage"
-
-			"item_class"	"tf_weapon_sniperrifle"
-			"item_slot"		"primary"
-			"used_by_classes"
-			{
-				"Sniper"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
-			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"			"10 0 -10"
-			}
-			"attributes"
-			{
-				"mod set sniper laser sight"
-				{
-					"attribute_class"	"mod_set_sniper_laser_sight"
-					"value" "1"
-				}
-			}
-			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"			"ui/item_heavy_gun_drop.wav"
-		}
-		"30004" // Beta Sniper Rifle 1 - beta content
-		{
-			"name"				"TF_WEAPON_BETA_SNIPERRIFLE_1"
-			"item_name"			"Beta Sniper Rifle 1"
-			"item_type_name"	"#TF_Weapon_SniperRifle"
-			"item_description"	"NON-FUNCTIONAL! ( PLACEHOLDER )"
-			"item_quality"		"collectors"
-
-			"item_class"	"tf_weapon_sniperrifle"
-			"item_slot"		"primary"
-			"used_by_classes"
-			{
-				"Sniper"	"1"
-			}
-
-			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
-			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
-			"attach_to_hands"	"2"
-			"static_attrs"
-			{
-				"min_viewmodel_offset"			"10 0 -10"
-			}
-			"attributes"
-			{
-				"mult sniper charge after bodyshot"
-				{
-					"attribute_class"	"mult_sniper_charge_after_bodyshot"
-					"value" "1.25"
-				}
-				"mult sniper charge after headshot"
-				{
-					"attribute_class"	"mult_sniper_charge_after_headshot"
-					"value" "1.45"
-				}
-				"mult sniper charge after miss"
-				{
-					"attribute_class"	"mult_sniper_charge_after_miss"
-					"value" "0.35"
-				}
-			}
-			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
-			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
-			"drop_sound"			"ui/item_heavy_gun_drop.wav"
 		}
 	}
 }
