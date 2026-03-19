@@ -3443,5 +3443,93 @@
 			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
+		"30030"
+		{
+			"enabled"	"1"
+			"name" "ratatata"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_type_name"	"#TF_Weapon_Pistol"
+			"item_logname" "the_winger"
+			"item_class" "tf_weapon_pistol"
+			"item_iconname" "the_winger"
+			"item_name"	"Fast an' Glorious"
+			"item_description"	"I heard this pistol goes RATATATATATATA!"
+			"item_slot"	"secondary"
+			"item_quality"	"normal"
+			"min_ilevel"	"15"
+			"max_ilevel"	"15"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "31"
+			"propername" "1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_winger_pistol/c_winger_pistol"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_winger_pistol/c_winger_pistol.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+				"weapon_stattrak_module_scale"				"0.723"
+			}
+			"attributes"
+			{
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value" "0.6"
+				}
+				"mod max primary clip override"
+				{
+					"attribute_class"	"mod_max_primary_clip_override"
+					"value"	"-1"
+				}
+				"add onhit addammo"
+				{
+					"attribute_class"	"add_onhit_addammo"		
+					"value"	"15"
+				}
+				"mod no reload DISPLAY ONLY"
+				{
+					"attribute_class"	"mod_no_reload_display_only"
+					"value"				"1"
+				}
+				"active health degen"
+				{
+					"attribute_class"	"active_item_health_regen"
+					"value"				"-6"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"		"add_maxhealth"
+					"value"					"-40"
+				}
+				"mod ammo per shot"
+				{
+					"attribute_class"	"mod_ammo_per_shot"
+					"value"	"15"
+				}
+				"mod use metal ammo type"
+				{
+					"attribute_class"	"mod_use_metal_ammo_type"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Winger.Single"
+				"sound_burst"	"Weapon_Winger.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
 	}
 }
