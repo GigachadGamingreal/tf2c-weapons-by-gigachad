@@ -3495,22 +3495,42 @@
 				"add onhit addammo"
 				{
 					"attribute_class"	"add_onhit_addammo"		
-					"value"	"15"
+					"value"	"50"
 				}
 				"mod no reload DISPLAY ONLY"
 				{
 					"attribute_class"	"mod_no_reload_display_only"
 					"value"				"1"
 				}
+				"speed_boost_on_hit"
+				{
+					"attribute_class"	"speed_boost_on_hit"
+					"value"					"5"
+				}
+				"build rate bonus"
+				{
+					"attribute_class"	"mod_build_rate"
+					"value"					"0.7"
+				}
+				"building cost reduction"
+				{
+					"attribute_class" "building_cost_reduction"
+					"value"				"0.8"
+				}
+				"engy dispenser radius increased"
+				{
+					"attribute_class"	"mult_dispenser_radius"
+					"value"					"1.5"
+				}
 				"active health degen"
 				{
 					"attribute_class"	"active_item_health_regen"
-					"value"				"-6"
+					"value"				"-3"
 				}
 				"max health additive penalty"
 				{
 					"attribute_class"		"add_maxhealth"
-					"value"					"-40"
+					"value"					"-20"
 				}
 				"mod ammo per shot"
 				{
