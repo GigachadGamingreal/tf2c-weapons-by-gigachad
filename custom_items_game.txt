@@ -1826,7 +1826,7 @@
 			"max_ilevel"	"5"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"attach_to_hands"		"2"
+			"attach_to_hands"		"1"
 			"static_attrs"
 			{
 				"min_viewmodel_offset"	"10 0 -6"
@@ -2490,7 +2490,7 @@
 		}
 		"30013"
 		{
-			"name" "scheduler"
+			"name" "schedulerpyro"
 			"enabled"	"1"
 			"item_class"	"tf_weapon_fireaxe"
 			"tags"
@@ -2503,7 +2503,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SledgeHammer"
 			"item_name"	"Scheduler Problemist"
-			"item_description" "Oh God! I am running late! (Upgrading and using it as a wrench does nothing when playing Engineer)"
+			"item_description" "Oh God! I am running late!"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
 			"image_inventory_size_w"		"128"
@@ -2518,10 +2518,6 @@
 			"used_by_classes"
 			{
 				"pyro"	"1"
-				"scout" "1"
-				"soldier" "1"
-				"demoman" "1"
-				"engineer" "1"
 			}
 			"static_attrs"
 			{
@@ -2780,6 +2776,672 @@
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30020" // Laser Gun Sniper
+		{
+			"name"				"lasergun"
+			"item_name"			"LASER Master"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"A Beam - That's what everyone sees, when you zoom in. Literally!"
+			"item_quality"		"normal"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/c_models/c_csgo_awp/c_csgo_awp.mdl"
+			"attach_to_hands"	"1"
+			"attributes"
+			{
+				"mod set sniper laser sight"
+				{
+					"attribute_class"	"mod_set_sniper_laser_sight"
+					"value"					"1"
+				}
+				"SRifle Charge rate increased"
+				{
+					"attribute_class"	"mult_sniper_charge_per_sec"
+					"value"					"1.3"
+				}
+				"reveal cloaked victim on hit"
+				{
+					"attribute_class" "reveal_cloaked_victim_on_hit"
+					"value"				"1"
+				}
+				"jarate backstabber"
+				{
+					"attribute_class" "jarate_backstabber"
+					"value"				"1"
+				}
+				"sniper only fire zoomed"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_special2"	"Weapon_SniperRailgun.NonScoped"
+				"sound_single_shot"	"Weapon_AWP.Single"
+				"sound_burst"		"Weapon_AWP.SingleCrit"
+			}
+			"image_inventory"		"backpack/weapons/c_models/c_csgo_awp/c_csgo_awp"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
+		"30021" // MVM Sniper Rifle - serider weapon
+		{
+			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
+			"item_name"			"MVM Sniper Rifle"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one."
+			"item_quality"		"vintage"
+
+			"item_class"	"tf_weapon_sniperrifle"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Sniper"	"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_sniperrifle_sniper.mdl"
+			"model_world"		"models/weapons/w_models/w_sniperrifle.mdl"
+			"attach_to_hands"	"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+			}
+			"attributes"
+			{
+				"mod set sniper laser sight"
+				{
+					"attribute_class"	"mod_set_sniper_laser_sight"
+					"value" "1"
+				}
+				"sniper only fire zoomed"
+				{
+					"attribute_class"	"sniper_only_fire_zoomed"
+					"value"	"1"
+				}
+				"hidden primary max ammo bonus"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"44"
+				}
+				"hide ammo hud"
+				{
+					"attribute_class"	"hide_ammo_hud"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_special2"	"Weapon_SniperRailgun.NonScoped"
+			}
+			"image_inventory"		"backpack/weapons/w_models/w_sniperrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
+		"30022"
+		{
+			"name"	"The Candy Cane"
+			"item_class"	"tf_weapon_club"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"#TF_CandyCane"
+			"item_description" "What a jolly, sugar feel!"
+			"item_logname"	"candy_cane"
+			"item_iconname"	"candy_cane"
+			"item_slot"	"melee"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"anim_slot" "MELEE_ALLCLASS"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"					
+			"model_player"	"models/workshop/weapons/c_models/c_candy_cane/c_candy_cane.mdl"
+			"used_by_classes"
+			{
+				"sniper"	"1"
+				"soldier" "1"
+				"pyro" "1"
+				"demoman" "1"
+				"heavy" "1"
+				"medic" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+			"visuals_red"
+			{
+				"skin"	"0"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+			}
+			"attributes"
+			{
+				"drop health pack on kill"
+				{
+					"attribute_class"	"drop_health_pack_on_kill"
+					"value"			"1"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"			"1.25"
+				}
+			}
+		}
+		"30023"
+		{
+			"name"	"candycanespy"
+			"item_class"	"tf_weapon_knife"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_description" "What a jolly, sugar feel!"
+			"item_name"	"#TF_CandyCane"
+			"item_logname"	"candy_cane"
+			"item_iconname"	"candy_cane"
+			"item_slot"	"melee"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"anim_slot" "MELEE_ALLCLASS"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"					
+			"model_player"	"models/workshop/weapons/c_models/c_candy_cane/c_candy_cane.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+			"visuals_red"
+			{
+				"skin"	"0"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+			}
+			"attributes"
+			{
+				"drop health pack on kill"
+				{
+					"attribute_class"	"drop_health_pack_on_kill"
+					"value"			"1"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"			"1.25"
+				}
+			}
+		}
+		"30024"
+		{
+			"name"	"candycanescout"
+			"item_class"	"tf_weapon_bat"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"#TF_CandyCane"
+			"item_description" "What a jolly, sugar feel!"
+			"item_logname"	"candy_cane"
+			"item_iconname"	"candy_cane"
+			"item_slot"	"melee"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"					
+			"model_player"	"models/workshop/weapons/c_models/c_candy_cane/c_candy_cane.mdl"
+			"used_by_classes"
+			{
+				"scout"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+			"visuals_red"
+			{
+				"skin"	"0"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+			}
+			"attributes"
+			{
+				"drop health pack on kill"
+				{
+					"attribute_class"	"drop_health_pack_on_kill"
+					"value"			"1"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"			"1.25"
+				}
+			}
+		}
+		"30025"
+		{
+			"name" "schedulerengi"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_wrench"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"		"1"
+			}
+			"item_logname"	"powerjack"
+			"item_iconname"	"powerjack"
+			"show_in_armory"	"1"
+			"item_name"	"Scheduler Problemist"
+			"anim_slot" "MELEE_ALLCLASS"
+			"item_description" "Oh God! I am running late!"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_powerjack/c_powerjack.mdl"
+			"attach_to_hands"	"1"
+			"anim_slot" "MELEE_ALLCLASS"
+			"inspect_panel_dist" "65"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"engineer" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 2 -9"
+				"weapon_stattrak_module_scale"			"0.6"
+			}
+			"attributes"
+			{
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
+				}
+				"mod see enemy health"
+				{
+					"attribute_class" "see_enemy_health"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.75"
+				}
+				"heal on kill"
+				{
+					"attribute_class" "heal_on_kill"
+					"value"				"100"
+				}
+				"active health degen"
+				{
+					"attribute_class"	"active_item_health_regen"
+					"value"				"-5"
+				}
+				"single wep holster time increased"
+				{
+					"attribute_class" "mult_switch_from_wep_deploy_time"
+					"value"				"0.5"
+				}
+				"health from healers reduced"
+				{
+					"attribute_class"	"mult_health_fromhealers"
+					"value"				"0.2"
+				}
+				"health from packs decreased"
+				{
+					"attribute_class" "mult_health_frompacks"
+					"value"				"0.2"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30026"
+		{
+			"name"	"candycaneengie"
+			"item_class"	"tf_weapon_wrench"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_name"	"#TF_CandyCane"
+			"item_description" "What a jolly, sugar feel!"
+			"item_logname"	"candy_cane"
+			"item_iconname"	"candy_cane"
+			"item_slot"	"melee"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"25"
+			"anim_slot" "MELEE_ALLCLASS"
+			"max_ilevel"	"25"
+			"attach_to_hands"	"1"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_candy_cane/c_candy_cane"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist"        "45"					
+			"model_player"	"models/workshop/weapons/c_models/c_candy_cane/c_candy_cane.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"mouse_pressed_sound"	"ui/item_wood_pole_pickup.wav"
+			"drop_sound"		"ui/item_wood_pole_drop.wav"
+			"visuals_red"
+			{
+				"skin"	"0"
+			}
+			"visuals_blu"
+			{
+				"skin"	"1"
+			}
+			"attributes"
+			{
+				"drop health pack on kill"
+				{
+					"attribute_class"	"drop_health_pack_on_kill"
+					"value"			"1"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"			"1.25"
+				}
+			}
+		}
+		"30027"
+		{
+			"name" "scheduler"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_club"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"		"1"
+			}
+			"item_logname"	"powerjack"
+			"item_iconname"	"powerjack"
+			"show_in_armory"	"1"
+			"item_name"	"Scheduler Problemist"
+			"item_description" "Oh God! I am running late!"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_powerjack/c_powerjack.mdl"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "65"
+			"anim_slot" "MELEE_ALLCLASS"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"soldier" "1"
+				"demoman" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 2 -9"
+				"weapon_stattrak_module_scale"			"0.6"
+			}
+			"attributes"
+			{
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
+				}
+				"mod see enemy health"
+				{
+					"attribute_class" "see_enemy_health"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.75"
+				}
+				"heal on kill"
+				{
+					"attribute_class" "heal_on_kill"
+					"value"				"100"
+				}
+				"damage applies to sappers"
+				{
+					"attribute_class" "set_dmg_apply_to_sapper"
+					"value"				"500"
+				}
+				"active health degen"
+				{
+					"attribute_class"	"active_item_health_regen"
+					"value"				"-5"
+				}
+				"single wep holster time increased"
+				{
+					"attribute_class" "mult_switch_from_wep_deploy_time"
+					"value"				"0.5"
+				}
+				"health from healers reduced"
+				{
+					"attribute_class"	"mult_health_fromhealers"
+					"value"				"0.2"
+				}
+				"health from packs decreased"
+				{
+					"attribute_class" "mult_health_frompacks"
+					"value"				"0.2"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30028"
+		{
+			"name" "schedulerscout"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_bat"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"		"1"
+			}
+			"item_logname"	"powerjack"
+			"item_iconname"	"powerjack"
+			"show_in_armory"	"1"
+			"item_name"	"Scheduler Problemist"
+			"item_description" "Oh God! I am running late!"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_powerjack/c_powerjack.mdl"
+			"attach_to_hands"	"1"
+			"anim_slot" "MELEE_ALLCLASS"
+			"inspect_panel_dist" "65"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"scout" "1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 2 -9"
+				"weapon_stattrak_module_scale"			"0.6"
+			}
+			"attributes"
+			{
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
+				}
+				"mod see enemy health"
+				{
+					"attribute_class" "see_enemy_health"
+					"value"				"1"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"0.75"
+				}
+				"heal on kill"
+				{
+					"attribute_class" "heal_on_kill"
+					"value"				"100"
+				}
+				"damage applies to sappers"
+				{
+					"attribute_class" "set_dmg_apply_to_sapper"
+					"value"				"500"
+				}
+				"active health degen"
+				{
+					"attribute_class"	"active_item_health_regen"
+					"value"				"-5"
+				}
+				"single wep holster time increased"
+				{
+					"attribute_class" "mult_switch_from_wep_deploy_time"
+					"value"				"0.5"
+				}
+				"health from healers reduced"
+				{
+					"attribute_class"	"mult_health_fromhealers"
+					"value"				"0.2"
+				}
+				"health from packs decreased"
+				{
+					"attribute_class" "mult_health_frompacks"
+					"value"				"0.2"
+				}
+			}
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_Machete.HitFlesh"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30029"
+		{
+			"name" "Shahanshahall"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_club"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"item_logname"	"shahanshah"
+			"item_iconname"	"shahanshah"
+			"item_description" "You call that a knife? THIS is a knife! (More like a sword)"
+			"show_in_armory"	"1"
+			"item_name"	"#TF_Shahanshah"
+			"item_slot"	"melee"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_scimitar/c_scimitar"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_scimitar/c_scimitar.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+				"medic"	"1"
+				"sniper"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"				"10 0 -6"
+				"weapon_stattrak_module_scale"			"0.455"				
+			}
+			"attributes"
+			{
+				"dmg bonus while half dead"
+				{
+					"attribute_class"	"mult_dmg_bonus_while_half_dead"
+					"value"	"1.25"
+				}
+				"dmg penalty while half alive"
+				{
+					"attribute_class"	"mult_dmg_penalty_while_half_alive"
+					"value"	"0.75"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
 	}
 }
