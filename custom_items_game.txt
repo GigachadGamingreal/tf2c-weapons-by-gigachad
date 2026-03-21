@@ -1721,10 +1721,14 @@
 			"item_slot"					"primary"
 			"show_in_armory"			"1"
 			
-			"item_quality"				"unique"
+			"item_quality"				"vintage"
 			"item_name"					"Lilith"
 			"item_type_name"			"#TF_Weapon_Minigun"
 			"item_description"			"Kill the ones who want peace."
+			"used_by_classes"
+			{
+				"Heavy"	"1"
+			}
 
 			"image_inventory"		"backpack/weapons/w_models/w_minigun"
 			"model_player"		"models/weapons/v_models/v_minigun_heavy.mdl"
@@ -1745,17 +1749,17 @@
 				"critboost on kill"
                 {
                     "attribute_class"    "add_onkill_critboost_time"
-                    "value"    "1"
-                }
-                "healing received penalty"
-                {
-                    "attribute_class"    "mult_healing_received"
-                    "value"    "0.6"
+                    "value"    "2"
                 }
                 "no primary ammo from dispensers while active"
                 {
                     "attribute_class"    "no_primary_ammo_from_dispensers"
                     "value"    "1"
+                }
+                "healing received penalty"
+                {
+                    "attribute_class"    "mult_healing_received"
+                    "value"    "0.65"
                 }
 				"max health additive penalty"
 				{
@@ -2009,7 +2013,7 @@
 			"mouse_pressed_sound"	"ui/item_umbrella_pickup.wav"
 			"drop_sound"			"ui/item_hat_drop.wav"
 		}
-		"30007" // seride_double_dealer - ! playtest part 1 !
+		"30007" // seride_double_dealer - ! playtest part 2 !
 		{
 			"name"	"seride_double_dealer"
 			"item_class"	"tf_weapon_wrench"
@@ -2023,9 +2027,9 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
 			"item_name"	"Double-Dealer"
-			"item_description"	"For the Engineer who forgot his toolbox at spawn"
+			"item_description"	"For the Engineer who forgot his toolbox at spawn."
 			"item_slot"	"melee"
-			"item_quality"	"unique"
+			"item_quality"	"vintage"
 			"item_logname"	"eureka_effect"
 			"item_iconname"	"eureka_effect"
 			"propername"	"1"
@@ -3551,6 +3555,100 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
+		"996"
+		{
+			"name"			"The Loose Cannon"
+			"prefab"		"weapon_demo_cannon paintkit_base"
+			"first_sale_date"	"2012/12/19"
+			"particle_suffix" 	"loose_cannon"
+			"tags"
+			{
+				"can_be_festivized"		"1"
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_demo_cannon/c_demo_cannon_festivizer.mdl"
+					}
+				}
+			}
+		}
+		"349"
+		{
+			"name"	"Sun-on-a-Stick"
+			"item_class"	"tf_weapon_club"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_be_festivized"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RiftFireMace"
+			"item_name"	"#TF_Unique_RiftFireMace"
+			"item_description"	"#TF_RiftFireMace_Desc"
+			"item_slot"	"melee"
+			"item_logname"	"lava_bat"
+			"item_iconname"	"lava_bat"
+			"item_quality"	"normal"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_rift_fire_mace/c_rift_fire_mace"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"55"
+			"model_player"	"models/workshop/weapons/c_models/c_rift_fire_mace/c_rift_fire_mace.mdl"
+			"attach_to_hands"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"scout"	"1"
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -6"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"attributes"
+			{
+				"crit vs burning players"
+				{
+					"attribute_class"	"or_crit_vs_playercond"
+					"value"	"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"	"0.75"
+				}
+				"dmg taken from fire reduced on active"
+				{
+					"attribute_class"	"mult_dmgtaken_from_fire_active"
+					"value"			"0.75"
+				}
+			}
+			"visuals"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/workshop/weapons/c_models/c_rift_fire_mace/c_rift_fire_mace_festivizer.mdl"
+					}
+				}
+			}
+		}
 		"30031"
 		{
 			"name"	"boomboomboomboom"
@@ -3614,7 +3712,7 @@
 				"max health additive penalty"
 				{
 					"attribute_class"	"add_maxhealth"
-					"value"					"-40"
+					"value"					"-55"
 				}
 				"Reload time increased"
 				{
@@ -3652,6 +3750,146 @@
 				"sound_single_shot"		"Weapon_AirBurster.Single"
 				"sound_burst"			"Weapon_AirBurster.SingleCrit"
 				"sound_special1"		"Weapon_AirBurster.Explode"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30032" // The Leecher Sapper
+		{
+			"name"	"theleechersapper"
+			"prefab"	"valve"
+			"item_class"	"tf_weapon_sapper"
+			"prefab"	"weapon_sapper"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Spy_Sapper"
+			"item_name"	"Leecher"
+			"item_description"	"Bon appétit!"
+			"item_slot"	"building"
+			"item_quality"	"normal"
+			"item_logname"	"snack_attack"
+			"item_iconname"	"snack_attack"
+			"image_inventory"	"backpack/weapons/c_models/c_breadmonster_sapper/c_breadmonster_sapper"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"25"
+			"anim_slot"	"building"
+			"attach_to_hands"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"propername"	"1"
+			"model_player"	"models/weapons/c_models/c_breadmonster_sapper/c_breadmonster_sapper.mdl"
+			"model_world"	"models/weapons/c_models/c_breadmonster_sapper/c_breadmonster_sapper.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"attributes"
+			{
+				"sapper damage leaches health"
+				{
+					"attribute_class"	"sapper_damage_leaches_health"
+					"value"					"5"
+				}
+				"sapper health bonus"
+				{
+					"attribute_class"	"mult_sapper_health"
+					"value"					"3"
+				}
+				"sapper damage penalty"
+				{
+					"attribute_class"	"mult_sapper_damage"
+					"value"					"0"
+				}
+			}
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"			"ACT_BREADSAPPER_VM_DRAW"
+					"ACT_VM_DRAW_DEPLOYED"	"ACT_BREADSAPPER_VM_DRAW"
+					"ACT_VM_IDLE"			"ACT_BREADSAPPER_VM_IDLE"
+
+					"ACT_BUILDING_VM_INSPECT_START"		"ACT_BREADMONSTER_VM_INSPECT_START"
+					"ACT_BUILDING_VM_INSPECT_IDLE"		"ACT_BREADMONSTER_VM_INSPECT_IDLE"
+					"ACT_BUILDING_VM_INSPECT_END"		"ACT_BREADMONSTER_VM_INSPECT_END"
+				}
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"				
+			}
+		}
+		"30033" // Overhealer medigun
+		{
+			"name"	"The Overhealer"
+			"item_class"	"tf_weapon_medigun"
+			"tags"
+			{
+				"can_heal_allies"		"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Medigun"
+			"item_name"		"Overhealer"
+			"item_description"	"Ze hurting is not rewarding as ze healing!"
+			"propername"		"1"
+			"item_slot"		"secondary"
+			"equip_region"	"medigun_backpack"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense.mdl"
+			"extra_wearable" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"normal"
+			"min_ilevel"	"8"
+			"max_ilevel"	"8"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -9"
+			}
+			"attributes"
+			{
+				"overheal bonus"
+				{
+					"attribute_class"	"mult_medigun_overheal_amount"
+					"value"					"1.5"
+				}
+				"overheal decay bonus"
+				{
+					"attribute_class"	"mult_medigun_overheal_decay"
+					"value"					"3"
+				}
+				"ubercharge rate penalty"
+				{
+					"attribute_class"	"mult_medigun_uberchargerate"
+					"value"					"0.8"
+				}
+				"ubercharge overheal rate penalty"
+				{
+					"attribute_class"	"mult_medigun_overheal_uberchargerate"
+					"value"					"0.5"
+				}
+				"heal rate penalty"
+				{
+					"atribute_class"	"mult_medigun_healrate"
+					"value"					"0.7"
+				}
+				"uber duration bonus"
+				{
+					"attribute_class"	"add_uber_time"
+					"value"					"-3"
+				}
+			}
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"medic_backpack"			"1"
+				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
