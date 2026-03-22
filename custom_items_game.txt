@@ -408,7 +408,7 @@
 			"base_item_name"	"Gloves of Running Urgently"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Gloves"
-			"item_name"	"#TF_Unique_Gloves_of_Running_Urgently"
+			"item_name"	"PLAYTEST_#TF_Unique_Gloves_of_Running_Urgently"
 			"item_description" "Killing an enemy grants 5 seconds of speed boost! HERE I COME!"
 			"item_slot"	"melee"
 			"item_logname"	"gloves_running_urgently"
@@ -480,7 +480,7 @@
 			"base_item_name"	"The Ambassador"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Revolver"
-			"item_name"	"#TF_Unique_Achievement_Revolver"
+			"item_name"	"PLAYTEST_#TF_Unique_Achievement_Revolver"
 			"item_slot"	"secondary"
 			"item_quality"	"unique"
 			"propername"	"1"
@@ -547,8 +547,8 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Gloves"
-			"item_name"	"#TF_Unique_Achievement_Fists"
-			"item_description"	"Cry? Who you think may cry, a devil?"
+			"item_name"	"PLAYTEST_#TF_Unique_Achievement_Fists"
+			"item_description"	"Cry? Who you think may cry, the devil?"
 			"item_slot"	"melee"
 			"item_logname"	"gloves"
 			"item_iconname"	"gloves"
@@ -1630,13 +1630,13 @@
 		}
 		"1179" // The Thermal Thruster
 		{
-			"name"	"The Thermal Thruster"
+			"name"	"PLAYTEST_The Thermal Thruster"
 			"item_class"			"tf_weapon_rocketpack"
 			"item_logname"	"rocketpack"
 			"item_iconname"	"rocketpack"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_RocketPack"
-			"item_name"			"#TF_ThermalThruster"
+			"item_name"			"PLAYTEST_#TF_ThermalThruster"
 			"item_description"	"Death from above! Fires up to 2 short-duration blasts that launches the Pyro in the direction they are aiming."
 			"item_slot"			"secondary"
 			"equip_region"		"back"
@@ -1649,7 +1649,7 @@
 			"attach_to_hands"	"1"
 			"attach_to_hands_vm_only"	"1"
 			"extra_wearable" "models/weapons/c_models/c_rocketpack/c_rocketpack.mdl" 
-			"item_quality"	"unique"
+			"item_quality"	"normal"
 			"propername"	"1"
 			"visuals"
 			{
@@ -1722,7 +1722,7 @@
 			"show_in_armory"			"1"
 			
 			"item_quality"				"vintage"
-			"item_name"					"Lilith"
+			"item_name"					"PLAYTEST_Lilith"
 			"item_type_name"			"#TF_Weapon_Minigun"
 			"item_description"			"Kill the ones who want peace."
 			"used_by_classes"
@@ -1813,7 +1813,7 @@
 				"can_deal_critical_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"item_name"			"Self-Shooter"
+			"item_name"			"PLAYTEST_Self-Shooter"
 			"item_description"	"A new way to quickly get rid of yourself! (Does no damage to enemies!)"
 			"item_quality"		"normal"
 			"item_logname" "samrevolver"
@@ -1897,7 +1897,7 @@
 		"30004" // test - test
 		{
 			"name"				"serider_heal"
-			"item_name"			"The sacred healer"
+			"item_name"			"PLAYTEST_The sacred healer"
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Do not ask where I got this thing! It might lower your pay!"
 			"item_quality"		"normal"
@@ -1935,7 +1935,7 @@
 		"30005" // test - test
 		{
 			"name"				"serider_miss"
-			"item_name"			"Dodging player"
+			"item_name"			"PLAYTEST_Dodging player"
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Umbrella boosted allies have a 75% chance to dodge every time damage is taken!"
 			"item_quality"		"normal"
@@ -1973,7 +1973,7 @@
 		"30006" // test - test
 		{
 			"name"				"strategist"
-			"item_name"			"Defense Strategist"
+			"item_name"			"PLAYTEST_Defense Strategist"
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Umbrella boost is defensive! Time to waste enemy lives!"
 			"item_quality"		"normal"
@@ -2026,7 +2026,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
-			"item_name"	"Double-Dealer"
+			"item_name"	"PLAYTEST_Double-Dealer"
 			"item_description"	"For the Engineer who forgot his toolbox at spawn."
 			"item_slot"	"melee"
 			"item_quality"	"vintage"
@@ -2105,8 +2105,8 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Wrench"
-			"item_name"	"Nearin' Danger"
-			"item_description"	"Show these cowards what a real Texan fights like! We don't need a whole target shootin' range for this one!"
+			"item_name"	"PLAYTEST_Nearin' Danger"
+			"item_description"	"Show these cowards how a real Texan fights like! We don't need a whole target shootin' range for this one!"
 			"item_slot"	"melee"
 			"item_quality"	"normal"
 			"item_logname"	"jag"
@@ -2186,7 +2186,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_FlameThrower"
-			"item_name"	"The Mechanizer"
+			"item_name"	"PLAYTEST_The Mechanizer"
 			"item_description"	"Airblasting a teammate grants THEM and YOU a speedboost for a few seconds! Airblast recharge time decreased by 25%! You can still sometimes damage people by going in their face and igniting them!"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
@@ -2274,7 +2274,7 @@
 		"30010" // civ umbrella bullet resist
 		{
 			"name"				"resister"
-			"item_name"			"Death Preventionist"
+			"item_name"			"PLAYTEST_Death Preventionist"
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Boost gives some Bullet Resistance.  I may be preventing deaths, after all!"
 			"item_quality"		"normal"
@@ -2338,7 +2338,7 @@
 			}
 			"item_class"	"tf_weapon_handgun_scout_secondary"
 			"item_type_name"	"#TF_Weapon_Pistol"
-			"item_name"	"The costly choice"
+			"item_name"	"PLAYTEST_The costly choice"
 			"item_description"	"Really, really expensive to use, if you ask me pardner!"
 			"item_logname"	"pep_pistol"
 			"item_iconname"	"pep_pistol"
@@ -2419,7 +2419,7 @@
 				"can_deal_taunt_damage"		"1"
 			}
 			"item_type_name"	"#TF_Weapon_Shotgun"
-			"item_name"	"Well sider"
+			"item_name"	"PLAYTEST_Well sider"
 			"item_description" "Switch, shoot, and change back. Reloading is not the strategy now, is it?"
 			"item_slot"	"secondary"
 			"item_logname"	"reserve_shooter"
@@ -2506,7 +2506,7 @@
 			"item_iconname"	"powerjack"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_SledgeHammer"
-			"item_name"	"Scheduler Problemist"
+			"item_name"	"PLAYTEST_Scheduler Problemist"
 			"item_description" "Oh God! I am running late!"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -2608,7 +2608,7 @@
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Shotgun"
 			"item_description" "You will make bacon out of your enemies with this weapon! (NO BACON INCLUDED!)"
-			"item_name"	"The Grand Bacon"
+			"item_name"	"PLAYTEST_The Grand Bacon"
 			"item_slot"	"primary"
 			"item_quality"	"normal"
 			"min_ilevel"	"5"
@@ -2710,7 +2710,7 @@
 				"can_deal_taunt_damage"		"1"
 			}
 			"item_type_name"	"#TF_Weapon_Shotgun"
-			"item_name"	"Well sider"
+			"item_name"	"PLAYTEST_Well sider"
 			"item_description" "Switch, shoot, and change back. Reloading is not the strategy now, is it?"
 			"item_slot"	"primary"
 			"item_logname"	"reserve_shooter"
@@ -2784,7 +2784,7 @@
 		"30020" // Laser Gun Sniper
 		{
 			"name"				"lasergun"
-			"item_name"			"LASER Master"
+			"item_name"			"PLAYTEST_LASER Master"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_description"	"A Beam - That's what everyone sees, when you zoom in. Literally!"
 			"item_quality"		"normal"
@@ -2839,7 +2839,7 @@
 		"30021" // MVM Sniper Rifle - serider weapon
 		{
 			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
-			"item_name"			"MVM Sniper Rifle"
+			"item_name"			"PLAYTEST_MVM Sniper Rifle"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one."
 			"item_quality"		"vintage"
@@ -2899,7 +2899,7 @@
 				"can_deal_critical_damage"	"1"
 			}
 			"show_in_armory"	"1"
-			"item_name"	"#TF_CandyCane"
+			"item_name"	"PLAYTEST_#TF_CandyCane"
 			"item_description" "What a jolly, sugar feel!"
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
@@ -2963,7 +2963,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_description" "What a jolly, sugar feel!"
-			"item_name"	"#TF_CandyCane"
+			"item_name"	"PLAYTEST_#TF_CandyCane"
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
 			"item_slot"	"melee"
@@ -3020,7 +3020,7 @@
 				"can_deal_critical_damage"	"1"
 			}
 			"show_in_armory"	"1"
-			"item_name"	"#TF_CandyCane"
+			"item_name"	"PLAYTEST_#TF_CandyCane"
 			"item_description" "What a jolly, sugar feel!"
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
@@ -3080,7 +3080,7 @@
 			"item_logname"	"powerjack"
 			"item_iconname"	"powerjack"
 			"show_in_armory"	"1"
-			"item_name"	"Scheduler Problemist"
+			"item_name"	"PLAYTEST_Scheduler Problemist"
 			"anim_slot" "MELEE_ALLCLASS"
 			"item_description" "Oh God! I am running late!"
 			"item_slot"	"melee"
@@ -3164,7 +3164,7 @@
 				"can_deal_critical_damage"	"1"
 			}
 			"show_in_armory"	"1"
-			"item_name"	"#TF_CandyCane"
+			"item_name"	"PLAYTEST_#TF_CandyCane"
 			"item_description" "What a jolly, sugar feel!"
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
@@ -3225,7 +3225,7 @@
 			"item_logname"	"powerjack"
 			"item_iconname"	"powerjack"
 			"show_in_armory"	"1"
-			"item_name"	"Scheduler Problemist"
+			"item_name"	"PLAYTEST_Scheduler Problemist"
 			"item_description" "Oh God! I am running late!"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -3317,7 +3317,7 @@
 			"item_logname"	"powerjack"
 			"item_iconname"	"powerjack"
 			"show_in_armory"	"1"
-			"item_name"	"Scheduler Problemist"
+			"item_name"	"PLAYTEST_Scheduler Problemist"
 			"item_description" "Oh God! I am running late!"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -3409,7 +3409,7 @@
 			"item_iconname"	"shahanshah"
 			"item_description" "You call that a knife? THIS is a knife! (More like a sword)"
 			"show_in_armory"	"1"
-			"item_name"	"#TF_Shahanshah"
+			"item_name"	"PLAYTEST_#TF_Shahanshah"
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_scimitar/c_scimitar"
 			"image_inventory_size_w"		"128"
@@ -3462,7 +3462,7 @@
 			"item_logname" "the_winger"
 			"item_class" "tf_weapon_pistol"
 			"item_iconname" "the_winger"
-			"item_name"	"Fast an' Glorious"
+			"item_name"	"PLAYTEST_Fast an' Glorious"
 			"item_description"	"I heard this pistol goes RATATATATATATA!"
 			"item_slot"	"secondary"
 			"item_quality"	"normal"
@@ -3558,6 +3558,7 @@
 		"996"
 		{
 			"name"			"The Loose Cannon"
+			"item_name"		"PLAYTEST_The Loose Cannon"
 			"prefab"		"weapon_demo_cannon paintkit_base"
 			"first_sale_date"	"2012/12/19"
 			"particle_suffix" 	"loose_cannon"
@@ -3579,6 +3580,7 @@
 		"349"
 		{
 			"name"	"Sun-on-a-Stick"
+			"item_name" "PLAYTEST_Sun-on-a-Stick"
 			"item_class"	"tf_weapon_club"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
@@ -3663,7 +3665,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_PipebombLauncher"
-			"item_name" "Boom Bomber"
+			"item_name" "PLAYTEST_Boom Bomber"
 			"item_description" "It goes kaboom lad!"
 			"item_slot"	"secondary"
 			"anim_slot"	"primary"
@@ -3762,7 +3764,7 @@
 			"prefab"	"weapon_sapper"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Spy_Sapper"
-			"item_name"	"Leecher"
+			"item_name"	"PLAYTEST_Leecher"
 			"item_description"	"Bon appétit!"
 			"item_slot"	"building"
 			"item_quality"	"normal"
@@ -3829,7 +3831,7 @@
 			}
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Medigun"
-			"item_name"		"Overhealer"
+			"item_name"		"PLAYTEST_Overhealer"
 			"item_description"	"Ze hurting is not rewarding as ze healing!"
 			"propername"		"1"
 			"item_slot"		"secondary"
@@ -3893,6 +3895,168 @@
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+		}
+		"30034" // mega shotgun
+		{
+			"name"	"megashotgunscout"
+			"item_class"	"tf_weapon_scattergun"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"enabled" "1"
+			"item_type_name"	"#TF_Weapon_Scattergun"
+			"item_name"	"PLAYTEST_The Doom Bloom"
+			"item_description"	"Adds +1 Clip size on Enemy kill! Maximum amount of Clips is 4! Their blood will be the last thing flowing."
+			"item_logname"	"pep_brawlerblaster"
+			"item_iconname"	"pep_brawlerblaster"
+			"item_quality"	"normal"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"item_slot" "primary"
+			"inspect_panel_dist" "38"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_pep_scattergun/c_pep_scattergun"
+			"model_player"	"models/workshop/weapons/c_models/c_pep_scattergun/c_pep_scattergun.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"scout"		"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -12"
+			}
+			"attributes"
+			{
+				"bullets per shot bonus"
+				{
+					"attribute_class"	"mult_bullets_per_shot"
+					"value"	"2"
+				}
+				"speed_boost_on_hit"
+				{
+					"attribute_class" "speed_boost_on_hit"
+					"value"				"5"
+				}
+				"clipsize increase on kill"
+				{
+					"attribute_class" "clipsize_increase_on_kill"
+					"value"				"1 4"
+				}
+				"no double jump"
+				{
+					"attribute_class"	"set_scout_doublejump_disabled"
+					"value"	"1"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"0.7"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"					"0.3"
+				}
+				"Reload time increased"
+				{
+					"attribute_class"	"mult_reload_time"
+					"value"					"1.5"
+				}
+				"dmg penalty while half alive"
+				{
+					"attribute_class"	"mult_dmg_penalty_while_half_alive"
+					"value"					"0.5"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Brawler_Blaster.Single"
+				"sound_burst"		"Weapon_Brawler_Blaster.SingleCrit"
+			}
+		}
+		"30035"
+		{
+			"name"	"milkgun"
+			"item_class"	"tf_weapon_syringegun_medic"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"item_logname"	"proto_syringe"
+			"item_iconname"	"proto_syringe"
+			"show_in_armory"	"1"
+			"item_type_name"	"Syringe milk weapon"
+			"item_name"		"PLAYTEST_milk choice"
+			"item_description"	"I have purchazed zis from unknown zources!"
+			"item_slot"	"primary"
+			"image_inventory"	"backpack/weapons/c_models/c_proto_syringegun/c_proto_syringegun"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_proto_syringegun/c_proto_syringegun.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"normal"
+			"propername"	"1"
+			"enabled" "1"
+			"min_ilevel"	"5"
+			"max_ilevel"	"5"
+			"used_by_classes"
+			{
+				"medic"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -14"				
+			}
+			"attributes"
+			{
+				"mad milk syringes"
+				{
+					"attribute_class"	"mad_milk_syringes"
+					"value"	"1"
+				}
+				"clip size penalty"
+				{
+					"attribute_class"	"mult_clipsize"
+					"value"					"0.5"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"					"0.95"
+				}
+				"hide enemy health"
+				{
+					"attribute_class"	"hide_enemy_health"
+					"value"	"1"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"    "Weapon_Overdose.Single"
+				"sound_burst"    "Weapon_Overdose.SingleCrit"
+			}
+			"visuals_red"
+			{
+				"skin" "0"
+				"sound_single_shot"    "Weapon_Overdose.Single"
+				"sound_burst"    "Weapon_Overdose.SingleCrit"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+				"sound_single_shot"    "Weapon_Overdose.Single"
+				"sound_burst"    "Weapon_Overdose.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
 		}
 	}
 }
