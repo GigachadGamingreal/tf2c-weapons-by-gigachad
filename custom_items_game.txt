@@ -632,7 +632,11 @@
 			"image_inventory"	"backpack/weapons/c_models/c_breadmonster_gloves/c_breadmonster_gloves"
 			"model_player"		"models/weapons/c_models/c_breadmonster_gloves/c_breadmonster_gloves.mdl"
 			"attach_to_hands"	"1"
-			"extra_wearable"	"models/workshop/player/items/all_class/sum20_breadcrab/sum20_breadcrab_heavy.mdl"
+			"extra_wearables"
+			{
+				"1"	"models/workshop/player/items/all_class/sum20_breadcrab/sum20_breadcrab_heavy.mdl"
+				"2"	"models/workshop/player/items/all_class/sum20_loaf_loafers_style2/sum20_loaf_loafers_style2_heavy.mdl"
+			}
 			"used_by_classes"
 			{
 				"heavy"	"1"
@@ -1129,6 +1133,10 @@
 			"inspect_panel_dist" 				"53"					
 			"model_player"	"models/workshop/weapons/c_models/c_sr3_punch/c_sr3_punch.mdl"
 			"attach_to_hands"	"1"
+			"extra_wearables"
+			{
+				"1"	"models/player/items/heavy/hounddog.mdl"
+			}
 			"item_quality"	"normal"
 			"propername"	"1"
 			"used_by_classes"
