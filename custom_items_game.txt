@@ -2153,7 +2153,7 @@ Playtest weapon."
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
-		"30008" // seride_nearing_danger - ! playtest part 1 !
+		"30008" // seride_nearing_danger - ! playtest part 2-3 !
 		{
 			"name"	"seride_nearing_danger"
 			"item_class"	"tf_weapon_wrench"
@@ -2181,6 +2181,10 @@ Playtest weapon."
 			"inspect_panel_dist" 			"50"
 			"model_player"	"models/workshop/weapons/c_models/c_jag/c_jag.mdl"
 			"attach_to_hands" "1"
+			"extra_wearables"
+			{
+				"1"	"models/workshop/player/items/engineer/hw2013_grease_monkey/hw2013_grease_monkey.mdl"
+			}
 			"used_by_classes"
 			{
 				"engineer"	"1"
