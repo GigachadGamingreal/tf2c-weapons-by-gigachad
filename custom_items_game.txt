@@ -410,6 +410,7 @@
 			"item_name"	"#TF_Unique_Gloves_of_Running_Urgently"
 			"item_description" "Killing an enemy grants 5 seconds of speed boost! HERE I COME!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"melee"
 			"item_logname"	"gloves_running_urgently"
@@ -483,6 +484,10 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_Revolver"
 			"item_name"	"#TF_Unique_Achievement_Revolver"
 			"item_slot"	"secondary"
+			"item_description" "
+
+Weapon by: 'Tachy'.
+Playtest weapon."
 			"item_quality"	"selfmade"
 			"propername"	"1"
 			"item_logname"	"ambassador"
@@ -650,6 +655,84 @@ Playtest weapon."
 	}
 	"items"
 	{
+		"43" // The Killing Gloves of Boxing
+		{
+			"name"	"The Killing Gloves of Boxing"
+			"prefab"	"valve"
+			"item_class"	"tf_weapon_fists"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Gloves"
+			"item_name"	"#TF_Unique_Achievement_Fists"
+			"item_description"	"Cry? Who you think may cry, the devil?
+			
+Weapon by: 'Tachy'.
+Playtest weapon."
+			"item_slot"	"melee"
+			"item_logname"	"gloves"
+			"item_iconname"	"gloves"
+			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves/c_boxing_gloves"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"53"					
+			"model_player"	"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"selfmade"
+			"propername"	"1"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+			}
+			"attributes"
+			{
+				"critboost on kill"
+				{
+					"attribute_class"	"add_onkill_critboost_time"
+					"value"	"5"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.2"
+				}
+			}
+			"hide_bodygroups_deployed_only"	"1"
+			"visuals"
+			{
+				"skin"	"0"
+				"player_bodygroups"
+				{
+					"hands"		"1"
+				}
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+				"animation_replacement"
+				{
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_MELEE_ALT1_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_MELEE_ALT1_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_MELEE_ALT1_VM_INSPECT_END"
+				}
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves_festivizer.mdl"
+					}
+				}
+			}
+			"mouse_pressed_sound" 	"ui/item_boxing_gloves_pickup.wav"
+			"drop_sound" 		"ui/item_boxing_gloves_drop.wav"
+		}
 		"58"
 		{
 			"name"	"Jarate"
@@ -950,6 +1033,95 @@ Playtest weapon."
 					"value" "3.0"
 				}
 			}
+		}
+		"1179" // The Thermal Thruster
+		{
+			"name"	"The Thermal Thruster"
+			"item_class"			"tf_weapon_rocketpack"
+			"item_logname"	"rocketpack"
+			"item_iconname"	"rocketpack"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_RocketPack"
+			"item_name"			"#TF_ThermalThruster"
+			"item_description"	"Death from above! Fires up to 2 short-duration blasts that launches the Pyro in the direction they are aiming.
+
+Weapon by: 'Tachy'.
+Playtest weapon."
+			"item_slot"			"secondary"
+			"equip_region"		"back"
+			"anim_slot"			"ITEM4"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketpack/c_rocketpack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"60"			
+			"model_player"	"models/weapons/c_models/c_rocketpack/c_rocketpack.mdl" 
+			"attach_to_hands"	"1"
+			"attach_to_hands_vm_only"	"1"
+			"extra_wearable" "models/weapons/c_models/c_rocketpack/c_rocketpack.mdl" 
+			"item_quality"	"selfmade"
+			"propername"	"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"backpack"		"1"
+				}
+			}
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -9"	
+				"damage force increase hidden"	"1.5"
+				"taunt attack name"		"TAUNTATK_PYRO_GASBLAST"
+				"taunt attack time"		"4.7"
+				"item_meter_charge_type"						"1"
+				"item_meter_charge_rate"			"30"
+				"holster_anim_time"		"0.8"
+				"falling_impact_radius_pushback"	"1"
+				"thermal_thruster"					"1"
+			}
+			"attributes"
+			{
+				"thermal_thruster_air_launch"
+				{
+					"attribute_class"	"thermal_thruster_air_launch"
+					"value"				"1"
+				}
+				"boots falling stomp"
+				{
+					"attribute_class"	"boots_falling_stomp"
+					"value"				"1"
+				}
+				"dmg taken increased"
+				{
+					"attribute_class"	"mult_dmgtaken_active"
+					"value"				"1.15"
+                }
+			}
+			"taunt"
+			{
+				"custom_taunt_scene_per_class"
+				{
+					"pyro"	"scenes/player/pyro/low/taunt_gasblast.vcd"
+				}
+				"custom_taunt_prop_per_class"
+				{
+					"pyro"	"models/player/items/taunts/matchbox/matchbox.mdl"
+				}
+			}
+			"visuals_red"
+			{
+				"skin" "0"
+			}
+			"visuals_blu"
+			{
+				"skin" "1"
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
 		"810"
 		{
@@ -1988,6 +2160,7 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Umbrella boosted allies have a 75% chance to dodge every time damage is taken!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_quality"		"selfmade"
 
@@ -2028,6 +2201,7 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Umbrella boost is defensive! Time to waste enemy lives!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_quality"		"selfmade"
 
@@ -2169,6 +2343,7 @@ Playtest weapon."
 			"item_name"	"Nearin' Danger"
 			"item_description"	"Show these cowards how a real Texan fights like! We don't need a whole target shootin' range for this one!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"melee"
 			"item_quality"	"selfmade"
@@ -2256,6 +2431,7 @@ Playtest weapon."
 			"item_name"	"The Mechanizer"
 			"item_description"	"Airblasting a teammate grants THEM and YOU a speedboost for a few seconds! Airblast recharge time decreased by 25%! You can still sometimes damage people by going in their face and igniting them!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"primary"
 			"item_quality"	"selfmade"
@@ -2355,6 +2531,7 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_Umbrella"
 			"item_description"	"Boost gives some Bullet Resistance.  I may be preventing deaths, after all!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_quality"		"selfmade"
 			"item_class"	"tf2c_weapon_umbrella"
@@ -2420,6 +2597,7 @@ Playtest weapon."
 			"item_name"	"The costly choice"
 			"item_description"	"Really, really expensive to use, if you ask me pardner!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_logname"	"pep_pistol"
 			"item_iconname"	"pep_pistol"
@@ -2507,6 +2685,7 @@ Playtest weapon."
 			"item_name"	"Well sider"
 			"item_description" "Switch, shoot, and change back. Reloading is not the strategy now, is it?
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"secondary"
 			"item_logname"	"reserve_shooter"
@@ -2594,6 +2773,7 @@ Playtest weapon."
 			"item_name"	"Scheduler Problemist"
 			"item_description" "Oh God! I am running late!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -2696,6 +2876,7 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_Shotgun"
 			"item_description" "You will make bacon out of your enemies with this weapon! (NO BACON INCLUDED!)
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_name"	"The Grand Bacon"
 			"item_slot"	"primary"
@@ -2810,6 +2991,7 @@ Playtest weapon."
 			"item_name"	"Well sider"
 			"item_description" "Switch, shoot, and change back. Reloading is not the strategy now, is it?
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"primary"
 			"item_logname"	"reserve_shooter"
@@ -2887,6 +3069,7 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_SniperRifle"
 			"item_description"	"A Beam - That's what everyone sees, when you zoom in. Literally!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_quality"		"selfmade"
 
@@ -3006,6 +3189,7 @@ Playtest weapon."
 			"item_name"	"#TF_CandyCane"
 			"item_description" "What a jolly, sugar feel!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
@@ -3070,6 +3254,7 @@ Playtest weapon."
 			"show_in_armory"	"1"
 			"item_description" "What a jolly, sugar feel!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_name"	"#TF_CandyCane"
 			"item_logname"	"candy_cane"
@@ -3131,6 +3316,7 @@ Playtest weapon."
 			"item_name"	"#TF_CandyCane"
 			"item_description" "What a jolly, sugar feel!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
@@ -3194,6 +3380,7 @@ Playtest weapon."
 			"anim_slot" "MELEE_ALLCLASS"
 			"item_description" "Oh God! I am running late!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -3279,6 +3466,7 @@ Playtest weapon."
 			"item_name"	"#TF_CandyCane"
 			"item_description" "What a jolly, sugar feel!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_logname"	"candy_cane"
 			"item_iconname"	"candy_cane"
@@ -3342,6 +3530,7 @@ Playtest weapon."
 			"item_name"	"Scheduler Problemist"
 			"item_description" "Oh God! I am running late!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -3436,6 +3625,7 @@ Playtest weapon."
 			"item_name"	"Scheduler Problemist"
 			"item_description" "Oh God! I am running late!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"melee"
 			"image_inventory"	"backpack/workshop/weapons/c_models/c_powerjack/c_powerjack"
@@ -3527,6 +3717,7 @@ Playtest weapon."
 			"item_iconname"	"shahanshah"
 			"item_description" "You call that a knife? THIS is a knife! (More like a sword)
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"show_in_armory"	"1"
 			"item_name"	"#TF_Shahanshah"
@@ -3585,6 +3776,7 @@ Playtest weapon."
 			"item_name"	"Fast an' Glorious"
 			"item_description"	"I heard this pistol goes RATATATATATATA!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"secondary"
 			"item_quality"	"selfmade"
@@ -3788,6 +3980,7 @@ Playtest weapon."
 			"item_name" "Boom Bomber"
 			"item_description" "It goes kaboom lad!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"secondary"
 			"anim_slot"	"primary"
@@ -3889,6 +4082,7 @@ Playtest weapon."
 			"item_name"	"Leecher"
 			"item_description"	"Bon appétit!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"building"
 			"item_quality"	"selfmade"
@@ -3960,6 +4154,7 @@ Playtest weapon."
 
 Ze hurting is not rewarding as ze healing!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"propername"		"1"
 			"item_slot"		"secondary"
@@ -4040,8 +4235,9 @@ Playtest weapon."
 			"enabled" "1"
 			"item_type_name"	"#TF_Weapon_Scattergun"
 			"item_name"	"The Doom Bloom"
-			"item_description"	"Adds +1 Clip size on Enemy kill! Maximum amount of Clips is 4! Their blood will be the last thing flowing.
+			"item_description"	"Adds +1 Clip size on Enemy kill! Maximum amount of Clips is 6! Their blood will be the last thing flowing.
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_logname"	"pep_brawlerblaster"
 			"item_iconname"	"pep_brawlerblaster"
@@ -4128,6 +4324,7 @@ Playtest weapon."
 			"item_name"		"milk choice"
 			"item_description"	"I have purchazed zis from unknown zources!
 
+Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_slot"	"primary"
 			"image_inventory"	"backpack/weapons/c_models/c_proto_syringegun/c_proto_syringegun"
@@ -4271,7 +4468,147 @@ Playtest weapon."
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 		}
+		"30036"
+		{
+			"name"	"solidblockerspy"
+			"item_class"	"tf_weapon_invis"
+			"prefab"	"weapon_invis"
+			"show_in_armory"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"100"
+			"item_type_name"	"#TF_Weapon_Watch"
+			"item_name"	"Quackin Disguiser"
+			"enabled"	"1"
+			"item_description"	"Disguising is instant! Mr Duck takes his cut, by lowering your cloak duration time.
+
+Weapon by: 'Gigachad Gaming'.
+Playtest weapon."
+			"item_slot"	"pda2"
+			"anim_slot"	"FORCE_NOT_USED"
+			"item_quality"	"selfmade"
+			"propername"	"1"
+			"image_inventory"	"backpack/workshop_partner/weapons/v_models/v_hm_watch/v_hm_watch"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop_partner/weapons/v_models/v_hm_watch/v_hm_watch.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"attributes"
+			{
+				"sapper damage bonus"
+				{
+					"attribute_class"	"mult_sapper_damage"
+					"value"					"3"
+				}
+				"mult disguise speed bonus"
+				{
+					"attribute_class"	"mult_disguise_speed"
+					"value"					"0"
+				}
+				"cloak consume rate increased"
+				{
+					"attribute_class"	"mult_cloak_meter_consume_rate"
+					"value"					"3"
+				}
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"8 0 -6"	
+			}
+			"mouse_pressed_sound"	"ui/item_watch_pickup.wav"
+			"drop_sound"		"ui/item_watch_drop.wav"
+		}
+		"30037"
+		{
+			"name"	"knifetanker"
+			"item_class"	"tf_weapon_knife"
+			"prefab"	"weapon_knife"
+			"tags"
+			{
+				"can_deal_damage"			"1"
+			}
+			"show_in_armory"	"1"
+			"enabled"	"1"
+			"item_type_name"	"#TF_Weapon_Knife"
+			"item_name"	"Savior"
+			"item_description"	"I will survive, and save - myself!
+
+Weapon by: 'Gigachad Gaming'.
+Playtest weapon."
+			"item_slot"	"melee"
+			"item_quality"	"selfmade"
+			"propername"	"1"
+			"min_ilevel"	"1"
+			"max_ilevel"	"1"
+			"item_logname"	"sharp_dresser"
+			"item_iconname"	"sharp_dresser"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 			"30"
+			"attach_to_hands" "1"
+			"model_player"	"models/workshop/weapons/c_models/c_acr_hookblade/c_acr_hookblade.mdl"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+			}
+			"anim_slot"	"ITEM1"
+			"visuals"
+			{
+				"sound_melee_hit"	"Weapon_Assassin_Knife.HitFlesh"
+
+				"animation_replacement"
+				{
+					"ACT_VM_DRAW"	"ACT_ITEM1_VM_DRAW"
+					"ACT_VM_IDLE"	"ACT_ITEM1_VM_IDLE"
+					"ACT_VM_HITCENTER"	"ACT_ITEM1_VM_HITCENTER"
+					"ACT_VM_HITCENTER2"	"ACT_ITEM1_VM_HITCENTER2"
+					"ACT_VM_SWINGHARD"	"ACT_ITEM1_VM_SWINGHARD"
+					"ACT_BACKSTAB_VM_UP"	"ACT_ITEM1_BACKSTAB_VM_UP"
+					"ACT_BACKSTAB_VM_DOWN"	"ACT_ITEM1_BACKSTAB_VM_DOWN"
+					"ACT_BACKSTAB_VM_IDLE"	"ACT_ITEM1_BACKSTAB_VM_IDLE"
+					"ACT_MELEE_VM_STUN"	"ACT_MELEE_VM_ITEM1_STUN"
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_ITEM1_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_ITEM1_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_ITEM1_VM_INSPECT_END"
+				}
+			}
+			"attributes"
+			{
+				"disable fancy class select anim"
+				{
+					"attribute_class"	"disable_fancy_class_select_anim"
+					"value"	"1"
+				}
+				"add cloak on kill"
+				{
+					"attribute_class"	"add_cloak_on_kill"
+					"value"					"10"
+				}
+				"heal on kill"
+				{
+					"attribute_class"	"heal_on_kill"
+					"value"					"50"
+				}
+				"dmg from melee increased"
+				{
+					"attribute_class"	"dmg_from_melee"
+					"value"					"1.5"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"					"2"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
 	}
 }
-
-
