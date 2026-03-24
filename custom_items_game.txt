@@ -396,148 +396,6 @@
 				}
 			}
 		}
-		"weapon_gru"
-		{
-			"enabled"	"1"
-			"item_class"	"tf_weapon_fists"
-			"tags"
-			{
-				"can_deal_damage"			"1"
-				"can_deal_critical_damage"	"1"
-			}
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Gloves"
-			"item_name"	"#TF_Unique_Gloves_of_Running_Urgently"
-			"item_description" "Killing an enemy grants 5 seconds of speed boost! HERE I COME!
-
-Weapon by: 'Gigachad Gaming'.
-Playtest weapon."
-			"item_slot"	"melee"
-			"item_logname"	"gloves_running_urgently"
-			"item_iconname"	"gloves_running_urgently"
-			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves_urgency/c_boxing_gloves_urgency"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"inspect_panel_dist" 				"53"					
-			"model_player"	"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl"
-			"attach_to_hands"	"1"
-			"item_quality"	"selfmade"
-			"used_by_classes"
-			{
-				"heavy"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"			"10 0 -10"
-				"speed_boost_on_kill"			"5"
-			}
-			"attributes"
-			{
-				"lunchbox adds minicrits"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value" "2"
-				}
-				"single wep holster time increased"
-				{
-					"attribute_class"	"mult_switch_from_wep_deploy_time"
-					"value"				"1.2"
-				}
-			}
-			"hide_bodygroups_deployed_only"	"1"
-			"visuals"
-			{
-				"player_bodygroups"
-				{
-					"hands"			"1"
-				}
-
-				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
-				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
-				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
-				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
-				"animation_replacement"
-				{
-					"ACT_MELEE_VM_INSPECT_START"	"ACT_MELEE_ALT1_VM_INSPECT_START"
-					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_MELEE_ALT1_VM_INSPECT_IDLE"
-					"ACT_MELEE_VM_INSPECT_END"		"ACT_MELEE_ALT1_VM_INSPECT_END"
-				}
-			}
-			"mouse_pressed_sound" "ui/item_boxing_gloves_pickup.wav"
-			"drop_sound" "ui/item_boxing_gloves_drop.wav"
-			"xifier_class_remap"	"gru"
-		}
-		"weapon_ambassador"
-		{
- 			"enabled"	"1"
-			"item_class"	"tf_weapon_revolver"
-			"tags"
-			{
-				"can_deal_damage"		"1"
-				"can_headshot"			"1"
-				"can_deal_critical_damage"	"1"
-				"can_deal_mvm_penetration_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
-			}
-			"base_item_name"	"The Ambassador"
-			"show_in_armory"	"1"
-			"item_type_name"	"#TF_Weapon_Revolver"
-			"item_name"	"#TF_Unique_Achievement_Revolver"
-			"item_slot"	"secondary"
-			"item_description" "
-
-Weapon by: 'Tachy'.
-Playtest weapon."
-			"item_quality"	"selfmade"
-			"propername"	"1"
-			"item_logname"	"ambassador"
-			"item_iconname"	"ambassador"
-			"image_inventory"	"backpack/weapons/c_models/c_ambassador/parts/c_ambassador_opt"
-			"image_inventory_size_w"		"128"
-			"image_inventory_size_h"		"82"
-			"model_player"	"models/weapons/c_models/c_ambassador/c_ambassador.mdl"
-			"attach_to_hands" "1"
-			"inspect_panel_dist" "32"
-			"used_by_classes"
-			{
-				"spy"	"1"
-			}
-			"static_attrs"
-			{
-				"min_viewmodel_offset"		"10 0 -6"
-				"crit_dmg_falloff"			"1"
-			}
-			"attributes"
-			{
-				"revolver use hit locations"
-				{
-					"attribute_class"	"set_weapon_mode"
-					"value"	"1"
-				}
-				"damage penalty"
-				{
-					"attribute_class"	"mult_dmg"
-					"value" "0.85"
-				}
-				"fire rate penalty"
-				{
-					"attribute_class"	"mult_postfiredelay"
-					"value"	"1.2"
-				}
-				"crit mod disabled"
-				{
-					"attribute_class"	"mult_crit_chance"
-					"value"	"0"
-				}
-			}
-			"visuals"
-			{
-				"sound_single_shot" "Weapon_Ambassador.Single"
-				"sound_burst" "Weapon_Ambassador.SingleCrit"
-			}
-			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
-			"drop_sound"		"ui/item_light_gun_drop.wav"
-		}
 		"weapon_holymackerel"
 		{
 			"enabled"	"1"
@@ -3872,7 +3730,7 @@ Playtest weapon."
 		"996"
 		{
 			"name"			"The Loose Cannon"
-			"item_name"		"The Loose Cannon"
+			"item_name"		"Loose Cannon"
 			"prefab"		"weapon_demo_cannon paintkit_base"
 			"first_sale_date"	"2012/12/19"
 			"particle_suffix" 	"loose_cannon"
@@ -4609,6 +4467,162 @@ Playtest weapon."
 			}
 			"mouse_pressed_sound"	"ui/item_knife_small_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"30038"
+		{
+			"name" "ambassadorbytachyitdidntshowupbeforeforsomereasonsoigaveitseparateid"
+ 			"enabled"	"1"
+			"item_class"	"tf_weapon_revolver"
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_headshot"			"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_mvm_penetration_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"base_item_name"	"The Ambassador"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Revolver"
+			"item_name"	"#TF_Unique_Achievement_Revolver"
+			"item_slot"	"secondary"
+			"item_description" "
+
+Weapon by: 'Tachy'.
+Playtest weapon."
+			"item_quality"	"selfmade"
+			"propername"	"1"
+			"item_logname"	"ambassador"
+			"item_iconname"	"ambassador"
+			"image_inventory"	"backpack/weapons/c_models/c_ambassador/parts/c_ambassador_opt"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_ambassador/c_ambassador.mdl"
+			"attach_to_hands" "1"
+			"inspect_panel_dist" "32"
+			"used_by_classes"
+			{
+				"spy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -6"
+				"crit_dmg_falloff"			"1"
+			}
+			"attributes"
+			{
+				"revolver use hit locations"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"	"1"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value" "0.85"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"	"1.2"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class"	"mult_crit_chance"
+					"value"	"0"
+				}
+			}
+			"visuals"
+			{
+				"sound_single_shot" "Weapon_Ambassador.Single"
+				"sound_burst" "Weapon_Ambassador.SingleCrit"
+			}
+			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
+			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"30039"
+		{
+			"name" "gruheavy"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_fists"
+			"craft_class"	"weapon"
+			"craft_material_type"	"weapon"
+			"item_description" "Killing an enemy grants 5 seconds of speed boost! HERE I COME!
+
+Weapon by: 'Gigachad Gaming'.
+Playtest weapon."
+
+			"capabilities"
+			{
+				"nameable"		"1"
+			}
+			"tags"
+			{
+				"can_deal_damage"			"1"
+				"can_deal_critical_damage"	"1"
+			}
+			"base_item_name"	"Gloves of Running Urgently"
+			"show_in_armory"	"1"
+			"item_type_name"	"#TF_Weapon_Gloves"
+			"item_name"	"#TF_Unique_Gloves_of_Running_Urgently"
+			"item_slot"	"melee"
+			"item_logname"	"gloves_running_urgently"
+			"item_iconname"	"gloves_running_urgently"
+			"image_inventory"	"backpack/weapons/c_models/c_boxing_gloves_urgency/c_boxing_gloves_urgency"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"53"					
+			"model_player"	"models/weapons/c_models/c_boxing_gloves/c_boxing_gloves.mdl"
+			"attach_to_hands"	"1"
+			"item_quality"	"selfmade"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"			"10 0 -10"
+				"speed_boost_on_kill"			"5"
+			}
+			"attributes"
+			{
+				"lunchbox adds minicrits"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value" "2"
+				}
+				"single wep holster time increased"
+				{
+					"attribute_class"	"mult_switch_from_wep_deploy_time"
+					"value"				"1.2"
+				}
+			}
+			"hide_bodygroups_deployed_only"	"1"
+			"visuals"
+			{
+				"player_bodygroups"
+				{
+					"hands"			"1"
+				}
+				
+				"skin" 2
+
+				"sound_melee_miss"	"Weapon_BoxingGloves.Miss"
+				"sound_melee_hit"	"Weapon_BoxingGloves.HitFlesh"
+				"sound_melee_hit_world"	"Weapon_BoxingGloves.HitWorld"
+				"sound_burst"	"Weapon_BoxingGloves.MissCrit"
+				"animation_replacement"
+				{
+					"ACT_MELEE_VM_INSPECT_START"	"ACT_MELEE_ALT1_VM_INSPECT_START"
+					"ACT_MELEE_VM_INSPECT_IDLE"		"ACT_MELEE_ALT1_VM_INSPECT_IDLE"
+					"ACT_MELEE_VM_INSPECT_END"		"ACT_MELEE_ALT1_VM_INSPECT_END"
+				}
+			}
+			"mouse_pressed_sound" "ui/item_boxing_gloves_pickup.wav"
+			"drop_sound" "ui/item_boxing_gloves_drop.wav"
+			"xifier_class_remap"	"gru"
 		}
 	}
 }
