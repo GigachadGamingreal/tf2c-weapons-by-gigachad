@@ -1844,31 +1844,16 @@ Playtest weapon."
 			}
             "attributes"
             {
-                "mod mini-crit airborne"
-                {
-                    "attribute_class"    "mini_crit_airborne"
-                    "value"    "1"
-                }
 				"critboost on kill"
                 {
                     "attribute_class"    "add_onkill_critboost_time"
-                    "value"    "1"
-                }
-                "healing received penalty"
-                {
-                    "attribute_class"    "mult_healing_received"
-                    "value"    "0.6"
+                    "value"    "3"
                 }
                 "no primary ammo from dispensers while active"
                 {
                     "attribute_class"    "no_primary_ammo_from_dispensers"
                     "value"    "1"
                 }
-				"max health additive penalty"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value"		"-150"
-				}
 				"crits_become_minicrits"
 				{
 					"attribute_class"	"crits_become_minicrits"
@@ -2983,7 +2968,9 @@ Playtest weapon."
 			"name"				"TF_WEAPON_MVM_SNIPERRIFLE"
 			"item_name"			"MVM Sniper Rifle"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
-			"item_description"	"Sight's steady, trigger's cold. Let's get a lead on this one.
+			"item_description"	"Infinite ammo
+			
+Sight's steady, trigger's cold. Let's get a lead on this one.
 
 Weapon by: 'Tachy'.
 Playtest weapon."
