@@ -3861,10 +3861,10 @@ Playtest weapon."
 					"attribute_class"	"mult_dmg"
 					"value"	"1.5"
 				}
-				"sticky arm time bonus"
+				"sticky arm time penalty"
 				{
 					"attribute_class"	"sticky_arm_time"
-					"value"	"-0.5"
+					"value"	"0.5"
 				}
 				"ubercharge rate bonus for healer"
 				{
@@ -3880,11 +3880,6 @@ Playtest weapon."
 				{
 					"attribute_class"	"mult_reload_time"
 					"value"	"2"
-				}
-				"stickybomb fizzle time"
-				{
-					"attribute_class"	"stickybomb_fizzle_time"
-					"value"	"25"
 				}
 				"max health additive penalty"
 				{
