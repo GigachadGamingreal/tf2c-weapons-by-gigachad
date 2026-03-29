@@ -2,6 +2,18 @@
 
 "items_game"
 {
+    "attributes"
+    {
+        "15190"
+        {
+            "name"                    "tachy holdrockets explain"
+            "attribute_class"        "mod_tachy_holdrockets_explain"
+            "description_string"    "Hold Fire to load up to %s1 rockets
+Release Fire to unleash the barrage"
+            "description_format"    "value_is_additive"
+            "effect_type"            "positive"
+        }
+    }
 	"prefabs"
 	{
 		"weapon_sword"
@@ -5017,6 +5029,113 @@ Playtest weapon."
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"30100" // Air dominance !!! proud of this one -tachy
+		{
+			"name"				"tachy_air_dominance"
+			"item_name"			"Air dominance"
+			"item_type_name"	"#TF_Weapon_RocketLauncher"
+			"item_description"	"Let's see them try that twice!
+
+Weapon by: 'Tachy'.
+Playtest weapon."
+			"item_quality"		"selfmade"
+
+			"item_class"	"tf_weapon_rocketlauncher"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"Soldier"		"1"
+			}
+
+			"model_player"		"models/weapons/v_models/v_rocketlauncher_soldier.mdl"
+			"model_world"		"models/weapons/w_models/w_rocketlauncher.mdl"
+			"attach_to_hands"	"2"
+
+			"static_attrs"
+			{
+				"min_viewmodel_offset" "10 -3 -10"
+				"hidden primary max ammo bonus" "1.5"
+			}
+			"attributes"
+			{
+				"rocket gravity"
+				{
+					"attribute_class"	"mod_rocket_gravity"
+					"value"				"0.45"
+				}
+				"tachy holdrockets explain" {"value"	"5"}
+				"rocket whistle"
+				{
+					"attribute_class"	"rocket_whistle"
+					"value"				"1"
+				}
+				"fire rate bonus HIDDEN"
+				{
+					"attribute_class" "mult_postfiredelay"
+					"value" "0.01"
+				}
+				"damage penalty"
+				{
+					"attribute_class" "mult_dmg"
+					"value" "0.78"
+				}
+				"dmg penalty vs buildings"
+				{
+					"attribute_class" "mult_dmg_vs_buildings"
+					"value" "0.65"
+				}
+				"Projectile speed decreased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"				"0.45"
+				}
+				"projectile spread angle penalty"
+				{
+					"attribute_class" "projectile_spread_angle"
+					"value" "9"
+				}
+				"crit mod disabled"
+				{
+					"attribute_class" "mult_crit_chance"
+					"value" "0"
+				}
+				"hidden separator"	"1"
+				"clip size bonus"
+				{
+					"attribute_class" "mult_clipsize"
+					"value" "1.25"
+				}
+				"blast radius decreased"
+				{
+					"attribute_class" "mult_explosion_radius"
+					"value" "0.8"
+				}
+                "self dmg push force increased"
+			  	{
+				 	"attribute_class"	"mult_dmgself_push_force"
+				    	"value"				"0.33"
+			   	}
+				"custom rampup"
+				{
+					"attribute_class"	"mod_custom_rampup"
+					"value"				"0.25"
+				}
+				"mini rockets"
+				{
+					"attribute_class"	"mini_rockets"
+					"value" "1"
+				}
+				"auto fires full clip"
+				{
+					"attribute_class" "auto_fires_full_clip"
+					"value" "1"
+				}
+			}
+
+			"image_inventory"		"backpack/weapons/w_models/w_rocketlauncher"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
 		}
 	}
 }
