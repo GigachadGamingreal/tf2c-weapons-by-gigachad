@@ -1,7 +1,19 @@
 #base items_game.txt
 
 "items_game"
-{	
+{
+	"attributes"
+    {
+        "15190"
+        {
+            "name"                    "tachy holdrockets explain"
+            "attribute_class"        "mod_tachy_holdrockets_explain"
+            "description_string"    "Hold Fire to load up to %s1 rockets
+Release Fire to unleash the barrage"
+            "description_format"    "value_is_additive"
+            "effect_type"            "positive"
+        }
+    }
 	"prefabs"
 	{
 		"weapon_sword"
@@ -2345,10 +2357,10 @@ Playtest weapon."
 					"attribute_class" "mult_player_movespeed"
 					"value"				"1.1"
 				}
-				"increased jump height from weapon"
+				"increased jump height"
 				{
-					"attribute_class" "mod_jump_height_from_weapon"
-					"value"				"1.15"
+					"attribute_class"	"mod_jump_height"
+					"value"					"1.15"
 				}
 				"damage penalty"
                 {
@@ -3733,6 +3745,9 @@ Playtest weapon."
 			"item_name"		"Loose Cannon"
 			"prefab"		"weapon_demo_cannon paintkit_base"
 			"first_sale_date"	"2012/12/19"
+			"item_quality"	"selfmade"
+			"item_description"	"Weapon by: 'Tachy'.
+Playtest weapon."
 			"particle_suffix" 	"loose_cannon"
 			"tags"
 			{
@@ -3906,7 +3921,7 @@ Playtest weapon."
 				}
 				"health from packs decreased"
 				{
-					"attribue_class"	"mult_health_frompacks"
+					"attribute_class"	"mult_health_frompacks"
 					"value"					"0.4"
 				}
 				"custom projectile model"
@@ -4476,7 +4491,6 @@ Playtest weapon."
 				"can_deal_mvm_penetration_damage"	"1"
 				"can_deal_long_distance_damage"	"1"
 			}
-			"base_item_name"	"The Ambassador"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Revolver"
 			"item_name"	"#TF_Unique_Achievement_Revolver"
@@ -4542,7 +4556,7 @@ Playtest weapon."
 			"item_class"	"tf_weapon_fists"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
-			"item_description" "Killing an enemy grants 5 seconds of speed boost! HERE I COME!
+			"item_description" "Hitting an enemy grants 5 seconds of speed boost! HERE I COME!
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -4556,7 +4570,6 @@ Playtest weapon."
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
 			}
-			"base_item_name"	"Gloves of Running Urgently"
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Gloves"
 			"item_name"	"#TF_Unique_Gloves_of_Running_Urgently"
@@ -4579,7 +4592,7 @@ Playtest weapon."
 			"static_attrs"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
-				"speed_boost_on_kill"			"5"
+				"speed_boost_on_hit"			"5"
 			}
 			"attributes"
 			{
@@ -4808,6 +4821,157 @@ Playtest weapon."
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
 			"xifier_class_remap"	"TTG Max Pistol"
+		}
+		"30042"
+		{
+			"name"			"barragedemo"
+			"enabled"		"1"
+			"item_class"		"tf_weapon_grenadelauncher"
+			"item_description"		"Lad, this ain't even the worst one.
+
+Weapon by: 'Gigachad Gaming'.
+Playtest weapon."
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+				"can_be_equipped_by_soldier_or_demo"	"1"
+				"can_deal_posthumous_damage"	"1"
+				"can_deal_critical_damage"	"1"
+				"can_deal_long_distance_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_logname"	"loch_n_load"
+			"item_iconname"	"loch_n_load"
+			"item_type_name"	"#TF_Weapon_GrenadeLauncher"
+			"item_name"		"Barrage Launcher"
+			"item_slot"		"primary"
+			"anim_slot"		"secondary"
+			"item_quality"		"selfmade"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"propername"		"1"
+			"attach_to_hands"	"1"
+			"inspect_panel_dist" "55"
+			"image_inventory"	"backpack/workshop/weapons/c_models/c_lochnload/c_lochnload"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/weapons/c_models/c_lochnload/c_lochnload.mdl"
+			"used_by_classes"
+			{
+				"demoman"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"					"10 0 -10"
+			}
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"		"ui/item_heavy_gun_drop.wav"
+			"attributes"
+			{
+				"auto fires full clip"
+				{
+					"attribute_class"	"auto_fires_full_clip"
+					"value" "1"
+				}
+				"Projectile speed increased"
+				{
+					"attribute_class"	"mult_projectile_speed"
+					"value"	"1.25"
+				}
+				"fire rate bonus"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"					"0.65"
+				}
+				"minicritboost on kill"
+				{
+					"attribute_class"	"add_onkill_minicritboost_time"
+					"value"					"5"
+				}
+				"blast dmg to self increased"
+				{
+					"attribute_class"	"blast_dmg_to_self"
+					"value" "2"
+				}
+				"maxammo primary reduced"
+				{
+					"attribute_class"	"mult_maxammo_primary"
+					"value"	"0.75"
+				}
+				"dmg taken from blast increased"
+				{
+					"attribute_class"	"mult_dmgtaken_from_explosions"
+					"value"					"1.35"
+				}
+			}
+
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_LochnLoad.Single"
+				"sound_burst"			"Weapon_LochnLoad.SingleCrit"
+				"animation_replacement"
+				{
+					"ACT_RELOAD_START"		"ACT_PRIMARY_RELOAD_START_2"
+					"ACT_VM_RELOAD"			"ACT_PRIMARY_VM_RELOAD_2"
+					"ACT_RELOAD_FINISH"		"ACT_PRIMARY_RELOAD_FINISH_2"
+
+					"ACT_PRIMARY_VM_INSPECT_START"		"ACT_PRIMARY_ALT1_VM_INSPECT_START"
+					"ACT_PRIMARY_VM_INSPECT_IDLE"		"ACT_PRIMARY_ALT1_VM_INSPECT_IDLE"
+					"ACT_PRIMARY_VM_INSPECT_END"		"ACT_PRIMARY_ALT1_VM_INSPECT_END"
+				}
+			}
+		}
+		"30043"
+		{
+			"enabled"		"1"
+			"name"			"bootsfatso"
+			"item_class"		"tf_wearable"
+			"loadondemand" "1"
+			"show_in_armory"	"1"
+			"item_type_name" 	"Jump Boots"
+			"item_name"		"Fatso Exercise"
+			"item_description" "Heavy is scout! Ahahahahaa!
+
+Weapon by: 'Gigachad Gaming'.
+Playtest weapon."
+			"item_slot"		"primary"
+			"equip_region"	"shirt"
+			"anim_slot"		"FORCE_NOT_USED"
+			"item_quality"		"selfmade"
+			"propername"	"1"
+			"min_ilevel"		"1"
+			"max_ilevel"		"99"
+			"image_inventory"	"backpack/weapons/c_models/c_rocketboots_soldier"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"		"models/workshop_partner/player/items/heavy/heavy_hockeyhair/heavy_hockeyhair.mdl"
+			"act_as_wearable" "1"
+			"extra_wearable"	"models/weapons/c_models/c_rocketboots_soldier.mdl"
+			"used_by_classes"
+			{
+				"heavy"	"1"
+			}
+			"attributes"
+			{
+				"increased jump height"
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"					"1.15"
+				}
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"	"50"
+				}
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"					"1"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
 		}
 	}
 }
