@@ -432,7 +432,7 @@
 	{
 		"58"
 		{
-			"name"	"Jarate"
+			"name"	"Jarate_serider"
 			"enabled"	"1"
 			"item_class"	"tf_weapon_jar"
 			"tags"
