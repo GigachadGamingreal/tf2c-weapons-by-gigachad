@@ -4430,7 +4430,7 @@ Playtest weapon."
 				"rocket gravity"
 				{
 					"attribute_class"	"mod_rocket_gravity"
-					"value"				"0.55"
+					"value"				"0.5"
 				}
 				"tachy holdrockets explain" {"value"	"5"}
 				"rocket whistle"
@@ -4451,12 +4451,12 @@ Playtest weapon."
 				"Projectile speed decreased"
 				{
 					"attribute_class"	"mult_projectile_speed"
-					"value"				"0.55"
+					"value"				"0.6"
 				}
 				"projectile spread angle penalty"
 				{
 					"attribute_class" "projectile_spread_angle"
-					"value" "10"
+					"value" "8"
 				}
 				"crit mod disabled"
 				{
@@ -4487,7 +4487,7 @@ Playtest weapon."
 				"custom rampup"
 				{
 					"attribute_class"	"mod_custom_rampup"
-					"value"				"0.25"
+					"value"				"0.33"
 				}
 				"mini rockets"
 				{
