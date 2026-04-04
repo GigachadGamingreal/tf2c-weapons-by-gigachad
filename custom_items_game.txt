@@ -1899,11 +1899,6 @@ Playtest weapon."
                     "attribute_class"    "mult_engy_sentry_damage"
                     "value"                "1.40"
                 }
-				"closerange backattack minicrits"
-				{
-					"attribute_class"	"closerange_backattack_minicrits"
-					"value"					"1"
-				}
 				"engy sentry radius increased"
                 {
                     "attribute_class"    "mult_sentry_range"
@@ -2246,11 +2241,6 @@ Playtest weapon."
 					"attribute_class"	"mult_switch_from_wep_deploy_time"
 					"value"	"0.7"
 				}
-				"max health additive bonus"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value"	"25"
-				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
@@ -2266,10 +2256,15 @@ Playtest weapon."
 					"attribute_class" "mult_crit_chance"
 					"value"				"0"
 				}
-				"dmg from melee increased"
+				"spread penalty"
 				{
-					"attribute_class" "dmg_from_melee"
-					"value"				"3"
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.5"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.3"
 				}
 				"Reload time increased"
 				{
@@ -2345,11 +2340,6 @@ Playtest weapon."
 				{
 					"attribute_class" "heal_on_kill"
 					"value"				"100"
-				}
-				"damage applies to sappers"
-				{
-					"attribute_class" "set_dmg_apply_to_sapper"
-					"value"				"500"
 				}
 				"active health degen"
 				{
@@ -2443,16 +2433,6 @@ Playtest weapon."
 				"auto fires full clip"
 				{
 					"attribute_class" "auto_fires_full_clip"
-					"value"				"1"
-				}
-				"reveal disguised victim on hit"
-				{
-					"attribute_class" "reveal_disguised_victim_on_hit"
-					"value"				"1"
-				}
-				"bombinomicon effect on death"
-				{
-					"attribute_class" "bombinomicon_effect_on_death"
 					"value"				"1"
 				}
 				"clip size penalty"
@@ -2552,11 +2532,6 @@ Playtest weapon."
 					"attribute_class"	"mult_switch_from_wep_deploy_time"
 					"value"	"0.7"
 				}
-				"max health additive bonus"
-				{
-					"attribute_class"	"add_maxhealth"
-					"value"	"25"
-				}
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
@@ -2572,10 +2547,15 @@ Playtest weapon."
 					"attribute_class" "mult_crit_chance"
 					"value"				"0"
 				}
-				"dmg from melee increased"
+				"spread penalty"
 				{
-					"attribute_class" "dmg_from_melee"
-					"value"				"3"
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.5"
+				}
+				"fire rate penalty"
+				{
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.3"
 				}
 				"Reload time increased"
 				{
@@ -2618,14 +2598,9 @@ Playtest weapon."
 					"attribute_class"	"mult_sniper_charge_per_sec"
 					"value"					"1.3"
 				}
-				"reveal cloaked victim on hit"
+				"reveal disguised victim on hit"
 				{
-					"attribute_class" "reveal_cloaked_victim_on_hit"
-					"value"				"1"
-				}
-				"jarate backstabber"
-				{
-					"attribute_class" "jarate_backstabber"
+					"attribute_class" "reveal_disguised_victim_on_hit"
 					"value"				"1"
 				}
 				"sniper only fire zoomed"
@@ -3044,11 +3019,6 @@ Playtest weapon."
 					"attribute_class" "heal_on_kill"
 					"value"				"100"
 				}
-				"damage applies to sappers"
-				{
-					"attribute_class" "set_dmg_apply_to_sapper"
-					"value"				"500"
-				}
 				"active health degen"
 				{
 					"attribute_class"	"active_item_health_regen"
@@ -3137,11 +3107,6 @@ Playtest weapon."
 				{
 					"attribute_class" "heal_on_kill"
 					"value"				"100"
-				}
-				"damage applies to sappers"
-				{
-					"attribute_class" "set_dmg_apply_to_sapper"
-					"value"				"500"
 				}
 				"active health degen"
 				{
@@ -3477,7 +3442,7 @@ Playtest weapon."
 				"sapper damage leaches health"
 				{
 					"attribute_class"	"sapper_damage_leaches_health"
-					"value"					"5"
+					"value"					"2"
 				}
 				"sapper health bonus"
 				{
@@ -3519,7 +3484,7 @@ Playtest weapon."
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Medigun"
 			"item_name"		"Overhealer"
-			"item_description"	"Über duration decreased by -3 seconds
+			"item_description"	"Über duration decreased by -4 seconds
 
 Ze hurting is not rewarding as ze healing!
 
@@ -3560,12 +3525,7 @@ Playtest weapon."
 				"ubercharge rate penalty"
 				{
 					"attribute_class"	"mult_medigun_uberchargerate"
-					"value"					"0.8"
-				}
-				"ubercharge overheal rate penalty"
-				{
-					"attribute_class"	"mult_medigun_overheal_uberchargerate"
-					"value"					"0.5"
+					"value"					"0.65"
 				}
 				"heal rate penalty"
 				{
@@ -3576,7 +3536,7 @@ Playtest weapon."
 				"uber duration bonus"
 				{
 					"attribute_class"	"add_uber_time"
-					"value"					"-3"
+					"value"					"-4"
 				}
 			}
 			"visuals"
@@ -3631,7 +3591,7 @@ Playtest weapon."
 				"bullets per shot bonus"
 				{
 					"attribute_class"	"mult_bullets_per_shot"
-					"value"	"2"
+					"value"	"1.6"
 				}
 				"speed_boost_on_hit"
 				{
@@ -3719,17 +3679,17 @@ Playtest weapon."
 				"mad milk syringes"
 				{
 					"attribute_class"	"mad_milk_syringes"
-					"value"	"1"
+					"value"	"2"
 				}
 				"clip size penalty"
 				{
 					"attribute_class"	"mult_clipsize"
 					"value"					"0.5"
 				}
-				"damage penalty"
+				"fire rate penalty"
 				{
-					"attribute_class"	"mult_dmg"
-					"value"					"0.95"
+					"attribute_class"	"mult_postfiredelay"
+					"value"					"1.15"
 				}
 				"hide enemy health"
 				{
@@ -4145,12 +4105,12 @@ Playtest weapon."
 				"dmg bonus vs buildings"
 				{
 					"attribute_class"	"mult_dmg_vs_buildings"
-					"value"					"2"
+					"value"					"1.3"
 				}
 				"projectile penetration heavy"
 				{
 					"attribute_class"	"projectile_penetration"
-					"value"					"5"
+					"value"					"3"
 				}
 				"crits_become_minicrits"
 				{
@@ -4233,11 +4193,6 @@ Playtest weapon."
 				{
 					"attribute_class"	"mult_postfiredelay"
 					"value"					"0.65"
-				}
-				"minicritboost on kill"
-				{
-					"attribute_class"	"add_onkill_minicritboost_time"
-					"value"					"5"
 				}
 				"blast dmg to self increased"
 				{
