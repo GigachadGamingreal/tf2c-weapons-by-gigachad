@@ -547,7 +547,7 @@ Playtest weapon."
 		}
 		"58"
 		{
-			"name"	"Jarate"
+			"name"	"Jarate_serider"
 			"enabled"	"1"
 			"item_class"	"tf_weapon_jar"
 			"tags"
@@ -4778,18 +4778,16 @@ Playtest weapon."
 		}
 		"30104" // Self-Shooter
 		{
-			"name"				"serider_self_shooter"
+			"name"				"serider_self_jumper"
 			"tags"
 			{
 				"can_deal_damage"			"1"
 				"can_deal_critical_damage"	"1"
-				"can_deal_long_distance_damage"	"1"
 			}
-			"item_name"			"Self-Shooter"
-			"item_description"	"A new way to quickly get rid of yourself!
+			"item_name"			"Self-Jumper"
+			"item_description"	"A new way to quickly escape!
 
 Weapon by: 'Tachy'
-Visual changes by: 'Gigachad Gaming'.
 Playtest weapon."
 			"item_quality"		"selfmade"
 			"item_logname" "samrevolver"
@@ -4816,22 +4814,17 @@ Playtest weapon."
 					"attribute_class"	"apply_self_knockback"
 					"value"				"350"
 				}
-				"move speed bonus"
+				"damage penalty"
 				{
-					"attribute_class" "mult_player_movespeed"
-					"value"				"1.15"
+					"attribute_class"	"mult_dmg"
+					"value"	"0"
 				}
-				"blast dmg to self increased"
+				"cannot pick up intelligence"
 				{
-					"attribute_class"	"blast_dmg_to_self"
-					"value"				"8.77"
+					"attribute_class"	"cannot_pick_up_intelligence"
+					"value"				"1"
 				}
 				"hidden separator"		"1"
-				"override projectile type"
-				{
-					"attribute_class"	"override_projectile_type"
-					"value"				"17"
-				}
 				"auto fires full clip"
 				{
 					"attribute_class"	"auto_fires_full_clip"
@@ -4845,13 +4838,12 @@ Playtest weapon."
 				"hidden secondary max ammo penalty"
 				{
 					"attribute_class"	"mult_maxammo_secondary"
-					"value" "0.1"
+					"value" "0.2"
 				}
-				"fuse bonus"
-				{
-					"attribute_class"	"fuse_mult"
-					"value" "0"
-				}
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Rocket_Jumper.Single"
 			}
 			"image_inventory"		"backpack/workshop/weapons/c_models/c_ttg_sam_gun/c_ttg_sam_gun"
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
@@ -4897,6 +4889,68 @@ Playtest weapon."
 			"item_iconname"	"umbrella"
 			
 			"image_inventory"		"backpack/weapons/w_models/w_umbrella"
+			"mouse_pressed_sound"	"ui/item_umbrella_pickup.wav"
+			"drop_sound"			"ui/item_hat_drop.wav"
+		}
+		"30106" // air
+		{
+			"name"				"serider_civ_air"
+			"item_name"			"Nothing"
+			"item_type_name"	"Nothing"
+			"item_description"	"Weapon by: 'Tachy'.
+Playtest weapon."
+			"item_quality"		"selfmade"
+
+			"item_class"	"tf_wearable"
+			"item_slot"		"secondary"
+			"act_as_wearable"	    "1"
+			"used_by_classes"
+			{
+				"Civilian"	"1"
+			}
+			"anim_slot"			    "FORCE_NOT_USED"
+			
+			"image_inventory"		"vgui/screens/transparent.vtf"
+			"mouse_pressed_sound"	"ui/item_umbrella_pickup.wav"
+			"drop_sound"			"ui/item_hat_drop.wav"
+		}
+		"30107" // serider_civ_overheal
+		{
+			"name"				"serider_civ_overheal"
+			"item_name"			"Overheal"
+			"item_type_name"	"Wearable"
+			"item_description"	"Weapon by: 'Tachy'.
+Playtest weapon."
+			"item_quality"		"selfmade"
+
+			"item_class"	"tf_wearable"
+			"item_slot"		"secondary"
+			"act_as_wearable"	    "1"
+			"used_by_classes"
+			{
+				"Civilian"	"1"
+			}
+			"attributes"
+			{
+				"everything can overheal on wearer"
+				{
+					"attribute_class"	"everything_can_overheal_wearer"
+					"value"				"1"
+				}
+				"health kits can overheal on wearer"
+				{
+					"attribute_class"	"health_kits_can_overheal_wearer"
+					"value"				"1"
+				}
+				"max health additive penalty"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"-25"
+				}
+			}
+			
+			"anim_slot"			    "FORCE_NOT_USED"
+			"image_inventory"		"backpack/workshop/player/items/scout/taunt_healthcarehog/taunt_healthcarehog"
 			"mouse_pressed_sound"	"ui/item_umbrella_pickup.wav"
 			"drop_sound"			"ui/item_hat_drop.wav"
 		}
