@@ -37,7 +37,191 @@ Release Fire to unleash the barrage"
             "description_format"    "value_is_additive"
             "effect_type"           "negative"
 		}
+		"15004"
+		{
+            "name"                  "less jump height explain"
+            "attribute_class"       "mod_giga_less_jump_height_explain"
+            "description_string"    "%s1% less jump height on wearer"
+            "description_format"    "value_is_percentage"
+            "effect_type"           "negative"
+		}
+		"15005"
+		{
+			"name"					"clip size doom bloom"
+			"attribute_class"		"mod_giga_doom_bloom_clip_size_explain"
+			"description_string"	"Adds +1 Clip size on Enemy kill
+Maximum amount of Clips is 6"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15006"
+		{
+			"name"					"airblast speed boost"
+			"attribute_class"		"mod_giga_airblast_speedboost_explain"
+			"description_string"	"Airblasting a teammate grants THEM and YOU a speedboost for %s1 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15007"
+		{
+			"name"					"airblast recharge time decreased"
+			"attribute_class"		"mod_giga_airblast_recharge_time_decreased_explain"
+			"description_string"	"Airblast recharge time decreased by 50%"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive" 
+		}
+		"15008"
+		{
+			"name"					"holdgrenades explain"
+			"attribute_class"		"mod_giga_holdgrenades_explain"
+			"description_string"	"Hold Fire to load up to %s1 grenades
+Release Fire to unleash the barrage"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15009"
+		{
+			"name"					"ubercharge rate penalty for healer"
+			"attribute_class"		"mod_giga_ubercharge_rate_for_healer_penalty"
+			"description_string"	"%s1% Less ÜberCharge rate for the medic healing you
+This effect does not work in the respawn room"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"15010"
+		{
+			"name"					"speed boost on hit time"
+			"attribute_class"		"mod_giga_speedboost_onhit_explain"
+			"description_string"	"On Hit: Gain a Speed Boost for %s1 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15011"
+		{
+			"name"					"holdshots explain"
+			"attribute_class"		"mod_giga_holdshots_explain"
+			"description_string"	"Hold Fire to load up to %s1 shots
+Release Fire to unleash the barrage"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15012"
+		{
+			"name"					"max building health penalty"
+			"attribute_class"		"mod_giga_max_building_health_penalty"
+			"description_string"	"%s1% less max building health"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"15013"
+		{
+			"name"					"sentry build speed penalty"
+			"attribute_class"		"mod_giga_sentry_build_speed_penalty"
+			"description_string"	"Sentry build speed decreased by %s1%"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"15014"
+		{
+			"name"					"speed boost on kill time"
+			"attribute_class"		"mod_giga_speedboost_onkill_explain"
+			"description_string"	"On Kill: Gain a Speed Boost for %s1 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15015"
+		{
+			"name"					"building build speed increase"
+			"attribute_class"		"mod_giga_building_build_speed_increase_fix"
+			"description_string"	"+%s1% Increase in building build speed"
+			"description_format"	"value_is_inverted_percentage"
+			"effect_type"			"positive"
+		}
+		"15016"
+		{
+			"name"					"building cost reduction fix"
+			"attribute_class"		"mod_giga_building_cost_reduction_fix"
+			"description_string"	"%s1% Metal reduction in building build cost"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"15017"
+		{
+			"name"					"dispenser range fix"
+			"attribute_class"		"mod_giga_dispenser_range_fix"
+			"description_string"	"+%s1% Increase in Dispenser range"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
+		}
+		"15018"
+		{
+			"name"					"sentry range penalty"
+			"attribute_class"		"mod_giga_sentry_range_penalty"
+			"description_string"	"%s1% Decrease in Sentry range"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"15019"
+		{
+			"name"					"ubercharge duration penalty"
+			"attribute_class"		"mod_giga_ubercharge_duration_penalty"
+			"description_string"	"Übercharge duration decreased by %s1 seconds"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"15020"
+		{
+			"name"					"disguise instant explain"
+			"attribute_class"		"mod_giga_disguise_instant_explain"
+			"description_string"	"Disguising duration is instant"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15021"
+		{
+			"name"					"overheal is infinite spy explain"
+			"attribute_class"		"mod_giga_overheal_is_infinite_spy_explain"
+			"description_string"	"You can be overhealed and the overheal has no limit"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"15022"
+		{
+			"name"					"sapper no damage explain"
+			"attribute_class"		"mod_giga_sapper_does_no_damage"
+			"description_string"	"Sapper does no damage to buildings"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"15023"
+		{
+			"name"					"death preventionist boost explain"
+			"attribute_class"		"mod_giga_deathpreventionist_boost_explain"
+			"description_string"	"Alt-Fire: Give weak bullet resistance boost to a teammate"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"15024"
+		{
+			"name"					"defense strategist boost explain"
+			"attribute_class"		"mod_giga_defensestrategist_boost_explain"
+			"description_string"	"Alt-Fire: Give defensive boost to a teammate.
+Boosted teammate takes 35% less damage (50% less damage from Sentry Guns)"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"15025"
+		{
+			"name"					"dodging player boost explain"
+			"attribute_class"		"mod_giga_dodgingplayer_boost_explain"
+			"description_string"	"Alt-Fire: Give dodging boost to a teammate.
+Boosted teammate has a 75% chance to dodge incoming damage taken.
+(Teammate takes no damage when succesfully dodging)"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
     }
+
 	"prefabs"
 	{
 		"weapon_sword"
@@ -1769,7 +1953,7 @@ Playtest weapon."
 			"name"				"serider_miss"
 			"item_name"			"Dodging player"
 			"item_type_name"	"#TF_Weapon_Umbrella"
-			"item_description"	"Umbrella boosted allies have a 75% chance to dodge every time damage is taken!
+			"item_description"	"The Boston man helped me with this one.
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -1792,6 +1976,11 @@ Playtest weapon."
 			}
 			"attributes"
 			{
+				"dodging player boost explain"
+				{
+					"attribute_class"	"mod_giga_dodgingplayer_boost_explain"
+					"value"				"1"
+				}
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
@@ -1810,7 +1999,7 @@ Playtest weapon."
 			"name"				"strategist"
 			"item_name"			"Defense Strategist"
 			"item_type_name"	"#TF_Weapon_Umbrella"
-			"item_description"	"Umbrella boost is defensive! Time to waste enemy lives!
+			"item_description"	"Time to waste enemy lives!
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -1833,6 +2022,11 @@ Playtest weapon."
 			}
 			"attributes"
 			{
+				"defense strategist boost explain"
+				{
+					"attribute_class"	"mod_giga_defensestrategist_boost_explain"
+					"value"				"1"
+				}
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
@@ -1899,9 +2093,9 @@ Playtest weapon."
                     "attribute_class"    "mult_engy_sentry_damage"
                     "value"                "1.40"
                 }
-				"engy sentry radius increased"
+				"sentry range penalty"
                 {
-                    "attribute_class"    "mult_sentry_range"
+                    "attribute_class"    "mod_giga_sentry_range_penalty"
                     "value"                "0.45"
                 }
 				"mark for death on building pickup"
@@ -1910,6 +2104,12 @@ Playtest weapon."
 					"value"					"1"
 				}
                 "wrench explain"        "1"
+				"hidden separator"		"1"
+				"engy sentry radius increased"
+                {
+                    "attribute_class"    "mult_sentry_range"
+                    "value"                "0.45"
+                }
 			}
 			"visuals"
 			{
@@ -1948,7 +2148,7 @@ Playtest weapon."
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_FlameThrower"
 			"item_name"	"The Mechanizer"
-			"item_description"	"Airblasting a teammate grants THEM and YOU a speedboost for a few seconds! Airblast recharge time decreased by 25%! You can still sometimes damage people by going in their face and igniting them!
+			"item_description"	"You can still sometimes damage people by going in their face and igniting them!
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -2011,6 +2211,16 @@ Playtest weapon."
 					"attribute_class"	"mod_jump_height"
 					"value"					"1.15"
 				}
+				"airblast speed boost"
+				{
+					"attribute_class"	"mod_giga_airblast_speedboost_explain"
+					"value"				"3"
+				}
+				"airblast recharge time decreased"
+				{
+					"mod_giga_airblast_recharge_time_decreased_explain"
+					"value"				"1"
+				}
 				"damage penalty"
                 {
 					"attribute_class" "mult_dmg"
@@ -2048,7 +2258,7 @@ Playtest weapon."
 			"name"				"resister"
 			"item_name"			"Death Preventionist"
 			"item_type_name"	"#TF_Weapon_Umbrella"
-			"item_description"	"Boost gives some Bullet Resistance.  I may be preventing deaths, after all!
+			"item_description"	"I may be preventing deaths, after all!
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -2069,6 +2279,11 @@ Playtest weapon."
 			}
 			"attributes"
 			{
+				"death preventionist boost explain"
+				{
+					"attribute_class"	"mod_giga_deathpreventionist_boost_explain"
+					"value"				"1"
+				}
 				"civ boost cond override"
 				{
 					"attribute_class"	"add_civ_boost_override"
@@ -2153,14 +2368,14 @@ Playtest weapon."
 					"attribute_class" "mult_onhit_enemyspeed_major"
 					"value"				"5"
 				}
-				"engineer sentry build rate multiplier"
+				"sentry build speed penalty"
 				{
-					"attribute_class"	"sentry_build_rate_multiplier"
-					"value"	"0.5"
+					"attribute_class"	"mod_giga_sentry_build_speed_penalty"
+					"value"				"0.5"
 				}
-				"engy building health bonus"
+				"max building health penalty"
 				{
-					"attribute_class"	"mult_engy_building_health"
+					"attribute_class"	"mod_giga_max_building_health_penalty"
 					"value" "0.95"
 				}
 				"clip size penalty"
@@ -2177,6 +2392,17 @@ Playtest weapon."
 				{
 					"attribute_class" "add_maxhealth"
 					"value"				"-25"
+				}
+				"hidden separator"	"1"
+				"engineer sentry build rate multiplier"
+				{
+					"attribute_class"	"sentry_build_rate_multiplier"
+					"value"	"0.5"
+				}
+				"engy building health bonus"
+				{
+					"attribute_class"	"mult_engy_building_health"
+					"value" "0.95"
 				}
 			}
 			"visuals"
@@ -2316,10 +2542,10 @@ Playtest weapon."
 			}
 			"attributes"
 			{
-				"speed_boost_on_kill"
+				"speed boost on kill time"
 				{
-					"attribute_class"	"speed_boost_on_kill"
-					"value" 				"6"
+					"attribute_class"	"mod_giga_speedboost_onkill_explain"
+					"value"				"6"
 				}
 				"Set DamageType Ignite"
 				{
@@ -2365,6 +2591,12 @@ Playtest weapon."
 				{
 					"attribute_class" "set_nocrit_vs_nonburning"
 					"value"				"1"
+				}
+				"hidden separator"	"1"
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
 				}
 			}
 			"visuals"
@@ -2430,10 +2662,10 @@ Playtest weapon."
 					"attribute_class" "mult_postfiredelay"
 					"value"				"0.7"
 				}
-				"auto fires full clip"
+				"holdshots explain"
 				{
-					"attribute_class" "auto_fires_full_clip"
-					"value"				"1"
+					"attribute_class"	"mod_giga_holdshots_explain"
+					"value"				"2"
 				}
 				"clip size penalty"
 				{
@@ -2455,15 +2687,26 @@ Playtest weapon."
 					"attribute_class" "mult_crit_chance"
 					"value"				"0"
 				}
-				"engy building health bonus"
+				"max building health penalty"
 				{
-					"attribute_class"	"mult_engy_building_health"
-					"value"					"0.85"
+					"attribute_class"	"mod_giga_max_building_health_penalty"
+					"value"				"0.85"
 				}
 				"maxammo metal reduced"
 				{
 					"attribute_class" "mult_maxammo_metal"
 					"value"				"0.85"
+				}
+				"hidden separator"	"1"
+				"auto fires full clip"
+				{
+					"attribute_class" "auto_fires_full_clip"
+					"value"				"1"
+				}
+				"engy building health bonus"
+				{
+					"attribute_class"	"mult_engy_building_health"
+					"value"					"0.85"
 				}
 			}
 			"visuals"
@@ -2571,7 +2814,7 @@ Playtest weapon."
 			"name"				"lasergun"
 			"item_name"			"LASER Master"
 			"item_type_name"	"#TF_Weapon_SniperRifle"
-			"item_description"	"A Beam - That's what everyone sees, when you zoom in. Literally!
+			"item_description"	"Pointing my LASER at you - better watch out.
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -2608,6 +2851,7 @@ Playtest weapon."
 					"attribute_class"	"sniper_only_fire_zoomed"
 					"value"	"1"
 				}
+				"tachy sniper laser sight explain"	"1"
 			}
 			"visuals"
 			{
@@ -2848,10 +3092,10 @@ Playtest weapon."
 			}
 			"attributes"
 			{
-				"speed_boost_on_kill"
+				"speed boost on kill time"
 				{
-					"attribute_class"	"speed_boost_on_kill"
-					"value" 				"6"
+					"attribute_class"	"mod_giga_speedboost_onkill_explain"
+					"value"				"6"
 				}
 				"mod see enemy health"
 				{
@@ -2887,6 +3131,12 @@ Playtest weapon."
 				{
 					"attribute_class" "mult_health_frompacks"
 					"value"				"0.2"
+				}
+				"hidden separator"	"1"
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
 				}
 			}
 			"visuals"
@@ -2999,10 +3249,10 @@ Playtest weapon."
 			}
 			"attributes"
 			{
-				"speed_boost_on_kill"
+				"speed boost on kill time"
 				{
-					"attribute_class"	"speed_boost_on_kill"
-					"value" 				"6"
+					"attribute_class"	"mod_giga_speedboost_onkill_explain"
+					"value"				"6"
 				}
 				"mod see enemy health"
 				{
@@ -3038,6 +3288,12 @@ Playtest weapon."
 				{
 					"attribute_class" "mult_health_frompacks"
 					"value"				"0.2"
+				}
+				"hidden separator"	"1"
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
 				}
 			}
 			"visuals"
@@ -3088,10 +3344,10 @@ Playtest weapon."
 			}
 			"attributes"
 			{
-				"speed_boost_on_kill"
+				"speed boost on kill time"
 				{
-					"attribute_class"	"speed_boost_on_kill"
-					"value" 				"6"
+					"attribute_class"	"mod_giga_speedboost_onkill_explain"
+					"value"				"6"
 				}
 				"mod see enemy health"
 				{
@@ -3127,6 +3383,12 @@ Playtest weapon."
 				{
 					"attribute_class" "mult_health_frompacks"
 					"value"				"0.2"
+				}
+				"hidden separator"	"1"
+				"speed_boost_on_kill"
+				{
+					"attribute_class"	"speed_boost_on_kill"
+					"value" 				"6"
 				}
 			}
 			"visuals"
@@ -3253,24 +3515,24 @@ Playtest weapon."
 					"attribute_class"	"mod_no_reload_display_only"
 					"value"				"1"
 				}
-				"speed_boost_on_hit"
+					"speed boost on hit time"
 				{
-					"attribute_class"	"speed_boost_on_hit"
-					"value"					"5"
+					"attribute_class"	"mod_giga_speedboost_onhit_explain"
+					"value"				"5"
 				}
-				"build rate bonus"
+				"building build speed increase"
 				{
-					"attribute_class"	"mod_build_rate"
-					"value"					"0.7"
+					"attribute_class"	"mod_giga_building_build_speed_increase_fix"
+					"value"				"0.7"
 				}
-				"building cost reduction"
+				"building cost reduction fix"
 				{
-					"attribute_class" "building_cost_reduction"
+					"attribute_class"	"mod_giga_building_cost_reduction_fix"
 					"value"				"0.8"
 				}
-				"engy dispenser radius increased"
+				"dispenser range fix"
 				{
-					"attribute_class"	"mult_dispenser_radius"
+					"attribute_class"	"mod_giga_dispenser_range_fix"
 					"value"					"1.5"
 				}
 				"active health degen"
@@ -3292,6 +3554,27 @@ Playtest weapon."
 				{
 					"attribute_class"	"mod_use_metal_ammo_type"
 					"value"	"1"
+				}
+				"hidden separator"	"1"
+				"speed_boost_on_hit"
+				{
+					"attribute_class"	"speed_boost_on_hit"
+					"value"					"5"
+				}
+				"build rate bonus"
+				{
+					"attribute_class"	"mod_build_rate"
+					"value"					"0.7"
+				}
+				"building cost reduction"
+				{
+					"attribute_class" "building_cost_reduction"
+					"value"				"0.8"
+				}
+				"engy dispenser radius increased"
+				{
+					"attribute_class"	"mult_dispenser_radius"
+					"value"					"1.5"
 				}
 			}
 			"visuals"
@@ -3360,10 +3643,10 @@ Playtest weapon."
 					"attribute_class"	"sticky_arm_time"
 					"value"	"0.5"
 				}
-				"ubercharge rate bonus for healer"
+				"ubercharge rate penalty for healer"
 				{
-					"attribute_class"	"mult_uberchargerate_for_healer"
-					"value"					"0.2"
+					"attribute_class"	"mod_giga_ubercharge_rate_for_healer_penalty"
+					"value"				"0.2"
 				}
 				"fire rate penalty"
 				{
@@ -3389,6 +3672,12 @@ Playtest weapon."
 				{
 					"attribute_class"	"mult_health_frompacks"
 					"value"					"0.4"
+				}
+				"hidden separator"	"1"
+				"ubercharge rate bonus for healer"
+				{
+					"attribute_class"	"mult_uberchargerate_for_healer"
+					"value"					"0.2"
 				}
 				"custom projectile model"
 				{
@@ -3444,11 +3733,22 @@ Playtest weapon."
 					"attribute_class"	"sapper_damage_leaches_health"
 					"value"					"2"
 				}
+				"overheal is infinite spy explain"
+				{
+					"mod_giga_overheal_is_infinite_spy_explain"
+					"value"					"1"
+				}
 				"sapper health bonus"
 				{
 					"attribute_class"	"mult_sapper_health"
 					"value"					"3"
 				}
+				"sapper no damage explain"
+				{
+					"attribute_class"	"mod_giga_sapper_does_no_damage"
+					"value"					"1"
+				}
+				"hidden separator" "1"
 				"sapper damage penalty"
 				{
 					"attribute_class"	"mult_sapper_damage"
@@ -3484,9 +3784,7 @@ Playtest weapon."
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Medigun"
 			"item_name"		"Overhealer"
-			"item_description"	"Über duration decreased by -4 seconds
-
-Ze hurting is not rewarding as ze healing!
+			"item_description"	"Ze hurting is not rewarding as ze healing!
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -3532,6 +3830,11 @@ Playtest weapon."
 					"atribute_class"	"mult_medigun_healrate"
 					"value"					"0.7"
 				}
+				"ubercharge duration penalty"
+				{
+					"attribute_class"	"mod_giga_ubercharge_duration_penalty"
+					"value"				"-4"
+				}
 				"hidden separator"	"1"
 				"uber duration bonus"
 				{
@@ -3564,7 +3867,7 @@ Playtest weapon."
 			"enabled" "1"
 			"item_type_name"	"#TF_Weapon_Scattergun"
 			"item_name"	"The Doom Bloom"
-			"item_description"	"Adds +1 Clip size on Enemy kill! Maximum amount of Clips is 6! Their blood will be the last thing flowing.
+			"item_description"	"Their blood will be the last thing flowing.
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -3593,15 +3896,15 @@ Playtest weapon."
 					"attribute_class"	"mult_bullets_per_shot"
 					"value"	"1.6"
 				}
-				"speed_boost_on_hit"
+				"speed boost on hit time"
 				{
-					"attribute_class" "speed_boost_on_hit"
+					"attribute_class"	"mod_giga_speedboost_onhit_explain"
 					"value"				"5"
 				}
-				"clipsize increase on kill"
+				"clip size doom bloom"
 				{
-					"attribute_class" "clipsize_increase_on_kill"
-					"value"				"1 4"
+					"attribute_class"	"mod_giga_doom_bloom_clip_size_explain"
+					"value"				"1"
 				}
 				"no double jump"
 				{
@@ -3627,6 +3930,17 @@ Playtest weapon."
 				{
 					"attribute_class"	"mult_dmg_penalty_while_half_alive"
 					"value"					"0.5"
+				}
+				"hidden separator"	"1"
+				"clipsize increase on kill"
+				{
+					"attribute_class" "clipsize_increase_on_kill"
+					"value"				"1 4"
+				}
+				"speed_boost_on_hit"
+				{
+					"attribute_class" "speed_boost_on_hit"
+					"value"				"5"
 				}
 			}
 			"visuals"
@@ -3728,7 +4042,7 @@ Playtest weapon."
 			"item_type_name"	"#TF_Weapon_Watch"
 			"item_name"	"Quackin Disguiser"
 			"enabled"	"1"
-			"item_description"	"Disguising is instant! Mr Duck takes his cut, by lowering your cloak duration time.
+			"item_description"	"Mr Duck takes his cut, by lowering your cloak duration time.
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -3751,15 +4065,21 @@ Playtest weapon."
 					"attribute_class"	"mult_sapper_damage"
 					"value"					"3"
 				}
-				"mult disguise speed bonus"
+				"disguise instant explain"
 				{
-					"attribute_class"	"mult_disguise_speed"
-					"value"					"0"
+					"attribute_class"	"mod_giga_disguise_instant_explain"
+					"value"					"1"
 				}
 				"cloak consume rate increased"
 				{
 					"attribute_class"	"mult_cloak_meter_consume_rate"
 					"value"					"3"
+				}
+				"hidden separator"	"1"
+				"mult disguise speed bonus"
+				{
+					"attribute_class"	"mult_disguise_speed"
+					"value"					"0"
 				}
 			}
 			"static_attrs"
@@ -3866,7 +4186,7 @@ Playtest weapon."
 			"item_class"	"tf_weapon_fists"
 			"craft_class"	"weapon"
 			"craft_material_type"	"weapon"
-			"item_description" "Hitting an enemy grants 5 seconds of speed boost! HERE I COME!
+			"item_description" "Here I come!
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
@@ -3902,10 +4222,14 @@ Playtest weapon."
 			"static_attrs"
 			{
 				"min_viewmodel_offset"			"10 0 -10"
-				"speed_boost_on_hit"			"5"
 			}
 			"attributes"
 			{
+				"speed boost on hit time"
+				{
+					"attribute_class"	"mod_giga_speedboost_onhit_explain"
+					"value"				"5"
+				}
 				"lunchbox adds minicrits"
 				{
 					"attribute_class"	"set_weapon_mode"
@@ -3916,6 +4240,8 @@ Playtest weapon."
 					"attribute_class"	"mult_switch_from_wep_deploy_time"
 					"value"				"1.2"
 				}
+				"hidden separator" "1"
+				"speed_boost_on_hit"			"5"
 			}
 			"hide_bodygroups_deployed_only"	"1"
 			"visuals"
@@ -4179,10 +4505,10 @@ Playtest weapon."
 			"drop_sound"		"ui/item_heavy_gun_drop.wav"
 			"attributes"
 			{
-				"auto fires full clip"
+				"holdgrenades explain"
 				{
-					"attribute_class"	"auto_fires_full_clip"
-					"value" "1"
+					"attribute_class"	"mod_giga_holdgrenades_explain"
+					"value"				"4"
 				}
 				"Projectile speed increased"
 				{
@@ -4208,6 +4534,12 @@ Playtest weapon."
 				{
 					"attribute_class"	"mult_dmgtaken_from_explosions"
 					"value"					"1.35"
+				}
+				"hidden separator"	"1"
+				"auto fires full clip"
+				{
+					"attribute_class"	"auto_fires_full_clip"
+					"value" "1"
 				}
 			}
 
@@ -4247,12 +4579,11 @@ Playtest weapon."
 			"propername"	"1"
 			"min_ilevel"		"1"
 			"max_ilevel"		"99"
-			"image_inventory"	"backpack/weapons/c_models/c_rocketboots_soldier"
+			"image_inventory"	"backpack/workshop/player/items/all_class/6v9_medal/6v9_medal"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
 			"model_player"		"models/workshop_partner/player/items/heavy/heavy_hockeyhair/heavy_hockeyhair.mdl"
 			"act_as_wearable" "1"
-			"extra_wearable"	"models/weapons/c_models/c_rocketboots_soldier.mdl"
 			"used_by_classes"
 			{
 				"heavy"	"1"
@@ -4347,6 +4678,52 @@ Playtest weapon."
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"		"ui/item_light_gun_drop.wav"
+		}
+		"30046"
+		{
+			"name"				"captureratebuff"
+			"item_name"			"Ankle tweaks"
+			"item_type_name"	"Wearable"
+			"item_description"	"Weapon by: 'Gigachad Gaming'.
+Playtest weapon."
+			"item_quality"		"selfmade"
+
+			"item_class"	"tf_wearable"
+			"item_slot"		"secondary"
+			"act_as_wearable"	    "1"
+			"used_by_classes"
+			{
+				"Civilian"	"1"
+			}
+			"attributes"
+			{
+				"increase player capture value"
+				{
+					"attribute_class"	"add_player_capturevalue"
+					"value"				"1"
+				}
+				"move speed penalty"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"0.8"
+				}
+				"less jump height explain"
+				{
+					"attribute_class"	"mod_giga_less_jump_height_explain"
+					"value"				"0.5"
+				}
+				"hidden separator"	"1"
+				"increased jump height"
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"0.5"
+				}
+			}
+			
+			"anim_slot"			    "FORCE_NOT_USED"
+			"image_inventory"		"backpack/workshop/player/items/all_class/armsrace_medal_participant/armsrace_medal_participant"
+			"mouse_pressed_sound"	"ui/item_umbrella_pickup.wav"
+			"drop_sound"			"ui/item_hat_drop.wav"
 		}
 
 //			1. change anything ABOVE this line -tachy
