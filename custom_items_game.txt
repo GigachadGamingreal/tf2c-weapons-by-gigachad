@@ -2818,7 +2818,7 @@ Playtest weapon."
 				"damage bonus"
 				{
 					"attribute_class"	"mult_dmg"
-					"value"					"1.8"
+					"value"					"1.4"
 				}
 				"maxammo secondary reduced"
 				{
@@ -2843,7 +2843,12 @@ Playtest weapon."
 				"Reload time increased"
 				{
 					"attribute_class" "mult_reload_time"
-					"value"				"1.7"
+					"value"				"1.6"
+				}
+				"clip size penalty"
+				{
+					"attribute_class" "mult_clipsize"
+					"value" "0.5"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
