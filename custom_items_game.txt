@@ -4321,7 +4321,11 @@ Playtest weapon."
 					"value"				"1.2"
 				}
 				"hidden separator" "1"
-				"speed_boost_on_hit"			"5"
+				"speed_boost_on_hit"
+				{
+					"attribute_class"	"speed_boost_on_hit"
+					"value"				"5"
+				}
 			}
 			"hide_bodygroups_deployed_only"	"1"
 			"visuals"
