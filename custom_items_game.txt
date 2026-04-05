@@ -238,11 +238,11 @@ Boosted teammate has a 75% chance to dodge incoming damage taken.
 		}
 		"15028"
 		{
-			"name"					"teammate hit speedboost"
-			"attribute_class"		"mod_giga_teammate_hit_speedboost_explain"
-			"description_string"	"On Hit Teammate: Boosts both players' speed for %s1 seconds"
+			"name"					"uber is overheal"
+			"attribute_class"		"mod_giga_uber_is_overheal_explain"
+			"description_string"	"Übercharge overheals and grants immunity to movement-impairing effects"
 			"description_format"	"value_is_additive"
-			"effect_type"			"positive"
+			"effect_type"			"neutral"
 		}
     }
 
@@ -3808,17 +3808,17 @@ Playtest weapon."
 			"show_in_armory"	"1"
 			"item_type_name"	"#TF_Weapon_Medigun"
 			"item_name"		"Overhealer"
-			"item_description"	"Ze hurting is not rewarding as ze healing!
+			"item_description"	"Ze hurting is not rewarding as ze healing.
 
 Weapon by: 'Gigachad Gaming'.
 Playtest weapon."
 			"propername"		"1"
 			"item_slot"		"secondary"
 			"equip_region"	"medigun_backpack"
-			"image_inventory"	"backpack/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense"
+			"image_inventory"	"backpack/weapons/c_models/c_proto_medigun/c_proto_medigun"
 			"image_inventory_size_w"		"128"
 			"image_inventory_size_h"		"82"
-			"model_player"	"models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defense.mdl"
+			"model_player"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun.mdl"
 			"extra_wearable" "models/workshop/weapons/c_models/c_medigun_defense/c_medigun_defensepack.mdl"
 			"attach_to_hands"	"1"
 			"item_quality"	"selfmade"
@@ -3834,6 +3834,11 @@ Playtest weapon."
 			}
 			"attributes"
 			{
+				"uber is overheal"
+				{
+					"attribute_class"	"mod_giga_uber_is_overheal_explain"
+					"value"				"1"
+				}
 				"overheal bonus"
 				{
 					"attribute_class"	"mult_medigun_overheal_amount"
@@ -3865,12 +3870,47 @@ Playtest weapon."
 					"attribute_class"	"add_uber_time"
 					"value"					"-4"
 				}
+				"medigun charge is megaheal"
+				{
+					"attribute_class"	"set_charge_type"
+					"value"					"2"
+				}
 			}
 			"visuals"
 			{
 				"player_bodygroups"
 				{
 					"medic_backpack"			"1"
+				}
+			}
+			"visuals_red"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
+					}
+				}
+				"skin" "0"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_red"
+				}
+			}
+			"visuals_blu"
+			{
+				"attached_models_festive"
+				{
+					"0"
+					{
+						"model"	"models/weapons/c_models/c_proto_medigun/c_proto_medigun_festivizer.mdl"
+					}
+				}
+				"skin" "1"
+				"custom_particlesystem"
+				{
+					"system"	"medicgun_beam_attrib_overheal_blue"
 				}
 			}
 			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
