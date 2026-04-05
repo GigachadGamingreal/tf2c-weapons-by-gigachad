@@ -5010,6 +5010,172 @@ Playtest weapon."
 				}
 			}
 		}
+		"32137" // Fancy-Cat Pepper-Spray
+		{
+			"name"				"Fancy-Cat Pepper-Spray"
+			"item_name"			"Fancy-Cat Pepper-Spray"
+			"item_type_name"	"#TF_Weapon_SniperRifle"
+			"item_description"	"Warning: ITEM IS MISSING 3 THINGS
+
+This is as close as I got to something a'la Machine gun for Pyro - StS (PL)
+
+Weapon by: 'StS (PL)'.
+Playtest weapon."
+			"item_quality"		"selfmade"
+
+			"item_class"	"tf2c_weapon_hunting_revolver"
+			"item_slot"		"primary"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"attributes"
+			{
+				"max health additive bonus"
+                {
+                    "attribute_class"    "add_maxhealth"
+                    "value"                "5.0"
+                }
+				"hidden primary max ammo bonus"
+                {
+                    "attribute_class"    "mult_maxammo_primary"
+                    "value"                "4"
+                }
+				"fire rate bonus HIDDEN"
+                {
+                    "attribute_class"    "mult_postfiredelay"
+                    "value"                "0.22"
+                }
+				"ammo regen"
+                {
+                    "attribute_class"    "addperc_ammo_regen"
+                    "value"                "0.6"
+                }
+                //"charged airblast" // Doesnt have the airblast implemented yet
+                //{
+                    //"attribute_class"    "set_charged_airblast"
+                    //"value"                "1"
+                //}
+				//"apply self knockback airblast" // Doesnt have the airblast implemented yet
+                //{
+                    //"attribute_class"    "apply_self_knockback_airblast"
+                    //"value"                "1"
+                //}
+                "Set DamageType Ignite" // ignites players like a flaregun vs pyro, doesn't make them get afterburn fsr
+                {
+                    "attribute_class"    "set_dmgtype_ignite"
+                    "value"                "1"
+                }
+                "accuracy scales damage"
+                {
+                    "attribute_class"    "accuracy_scales_damage"
+                    "value"                "1.15"
+                }
+                "minicritboost on kill"
+                {
+                    "attribute_class"    "add_onkill_minicritboost_time"
+                    "value"                "1"
+                }
+                "fire rate bonus with reduced health"
+                {
+                    "attribute_class"    "mult_postfiredelay_with_reduced_health"
+                    "value"                "0.8"
+                }
+                "damage bonus vs burning"
+                {
+                    "attribute_class"    "mult_dmg_vs_burning"
+                    "value"                "1.05"
+                }
+                "crits_become_minicrits"
+                {
+                    "attribute_class"    "crits_become_minicrits"
+                    "value"                "1"
+                }
+                "mod max primary clip override"
+                {
+                    "attribute_class"    "mod_max_primary_clip_override"
+                    "value"                "36"
+                }
+				"sniper no charge"
+				{
+					"attribute_class"	"unimplemented_mod_sniper_no_charge"
+					"value"				"1"
+				}
+				"sniper no headshots"
+				{
+					"attribute_class"	"set_weapon_mode"
+					"value"				"1"
+				}
+				"sniper zoom penalty"
+				{
+					"attribute_class"	"mult_zoom_fov"
+					"value"				"0.5"
+				}
+				"longer damage falloff distance"
+				{
+					"attribute_class"	"mult_falloff_distance"
+					"value"				"0.80"
+				}
+				"weapon burn time increased" //This doesnt want to make the afterburn longer for some reason, it's like lighting up a pyro with a flaregun (one tick) still
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"				"2"
+				}
+				"damage penalty"
+				{
+					"attribute_class"	"mult_dmg"
+					"value"				"0.33"
+				}
+				"spread penalty"
+				{
+					"attribute_class"	"mult_spread_scale"
+					"value"				"0.5"
+				}
+				//"bullets per shot bonus" // I cant figure out how to decrease the accuracy to be closer to a SMG/Minigun, so this needs to be commented out for now
+				//{
+					//"attribute_class"	"mult_bullets_per_shot"
+					//"value"				"1.05"
+				//}
+			}
+
+			"model_world"				"models/weapons/w_models/w_revrifle_sniper.mdl"
+			"model_player"				"models/weapons/v_models/v_revrifle_sniper.mdl"
+			"attach_to_hands"			"2"
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"10 0 -10"
+				"class select override vcd"	"class_select_revrifle"
+			}
+			"visuals"
+			{
+				"sound_single_shot"	"Weapon_Winger.Single" // placeholder sounds so it doesnt hurt my ears that much
+				"sound_burst"	"Weapon_Winger.SingleCrit"
+				"animation_replacement"
+				{
+					"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED"	"ACT_MP_ATTACK_STAND_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED"	"ACT_MP_ATTACK_CROUCH_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED"	"ACT_MP_ATTACK_SWIM_PRIMARY_DEPLOYED_ALT"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED"	"ACT_MP_RELOAD_STAND_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED"	"ACT_MP_RELOAD_CROUCH_PRIMARY_DEPLOYED_ALT"
+					"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED"	"ACT_MP_RELOAD_SWIM_PRIMARY_DEPLOYED_ALT"
+					
+					"ACT_MP_ATTACK_STAND_PRIMARY"	"ACT_MP_ATTACK_STAND_PRIMARY_ALT"
+					"ACT_MP_ATTACK_CROUCH_PRIMARY"	"ACT_MP_ATTACK_CROUCH_PRIMARY_ALT"
+					"ACT_MP_ATTACK_SWIM_PRIMARY"	"ACT_MP_ATTACK_SWIM_PRIMARY_ALT"
+					
+					"ACT_MP_RELOAD_STAND_PRIMARY"	"ACT_MP_RELOAD_STAND_PRIMARY_ALT"
+					"ACT_MP_RELOAD_CROUCH_PRIMARY"	"ACT_MP_RELOAD_CROUCH_PRIMARY_ALT"
+					"ACT_MP_RELOAD_SWIM_PRIMARY"	"ACT_MP_RELOAD_SWIM_PRIMARY_ALT"
+				}
+			}
+			"item_logname"	"hunterrifle"
+			"item_iconname"	"hunterrifle"
+			
+			"image_inventory"		"backpack/weapons/w_models/w_revrifle"
+			"mouse_pressed_sound"	"ui/item_heavy_gun_pickup.wav"
+			"drop_sound"			"ui/item_heavy_gun_drop.wav"
+		}
 //			1. change anything ABOVE this line -tachy
 //			TACHY CUSTOM WEAPONS, Do Not Change If I Haven't Told You To. - Tachy
 //			TACHY CUSTOM WEAPONS, Do Not Change If I Haven't Told You To. - Tachy
