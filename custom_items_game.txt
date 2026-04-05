@@ -66,9 +66,9 @@ Maximum amount of Clips is 6"
 		{
 			"name"					"airblast recharge time decreased"
 			"attribute_class"		"mod_giga_airblast_recharge_time_decreased_explain"
-			"description_string"	"Airblast recharge time decreased by 50%"
-			"description_format"	"value_is_additive"
-			"effect_type"			"positive" 
+			"description_string"	"Airblast recharge time decreased by %s1%"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"positive"
 		}
 		"15008"
 		{
@@ -2243,7 +2243,7 @@ Playtest weapon."
 				"airblast recharge time decreased"
 				{
 				    "attribute_class" "mod_giga_airblast_recharge_time_decreased_explain"
-				    "value" "1"
+				    "value"				"0.5"
 				}
 				"damage penalty"
                 {
@@ -3760,7 +3760,7 @@ Playtest weapon."
 				"overheal is infinite spy explain"
 				{
 				    "attribute_class" "mod_giga_overheal_is_infinite_spy_explain"
-				    "value" "1"
+				    "value"					"1"
 				}
 				"sapper health bonus"
 				{
