@@ -3856,7 +3856,7 @@ Playtest weapon."
 				}
 				"heal rate penalty"
 				{
-					"atribute_class"	"mult_medigun_healrate"
+					"attribute_class"	"mult_medigun_healrate"
 					"value"					"0.7"
 				}
 				"ubercharge duration penalty"
