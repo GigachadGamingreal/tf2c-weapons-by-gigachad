@@ -5076,7 +5076,7 @@ Playtest weapon."
                     "attribute_class"    "mult_postfiredelay"
                     "value"                "0.22"
                 }
-				"ammo regen"
+				"ammo regen" // this leaks into secondary, is it intended? - tachy
                 {
                     "attribute_class"    "addperc_ammo_regen"
                     "value"                "0.6"
@@ -5095,11 +5095,6 @@ Playtest weapon."
                 {
                     "attribute_class"    "set_dmgtype_ignite"
                     "value"                "1"
-                }
-                "accuracy scales damage"
-                {
-                    "attribute_class"    "accuracy_scales_damage"
-                    "value"                "1.15"
                 }
                 "minicritboost on kill"
                 {
@@ -5146,20 +5141,31 @@ Playtest weapon."
 					"attribute_class"	"mult_falloff_distance"
 					"value"				"0.80"
 				}
-				"weapon burn time increased" //This doesnt want to make the afterburn longer for some reason, it's like lighting up a pyro with a flaregun (one tick) still
-				{
-					"attribute_class"	"mult_wpn_burntime"
-					"value"				"2"
-				}
 				"damage penalty"
 				{
 					"attribute_class"	"mult_dmg"
 					"value"				"0.33"
 				}
+				"custom rampup"
+				{
+					"attribute_class"	"mod_custom_rampup"
+					"value"				"0.88"
+				}
+				"hidden separator"	"1"// remove this one once you get it working - tachy
+                "accuracy scales damage" // does this even work??? - tachy
+                {
+                    "attribute_class"    "accuracy_scales_damage"
+                    "value"                "1.15"
+                }
 				"spread penalty"
 				{
 					"attribute_class"	"mult_spread_scale"
 					"value"				"0.5"
+				}
+				"weapon burn time increased" //This doesnt want to make the afterburn longer for some reason, it's like lighting up a pyro with a flaregun (one tick) still
+				{
+					"attribute_class"	"mult_wpn_burntime"
+					"value"				"2"
 				}
 				//"bullets per shot bonus" // I cant figure out how to decrease the accuracy to be closer to a SMG/Minigun, so this needs to be commented out for now
 				//{
