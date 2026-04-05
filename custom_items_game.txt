@@ -2242,8 +2242,8 @@ Playtest weapon."
 				}
 				"airblast recharge time decreased"
 				{
-					"mod_giga_airblast_recharge_time_decreased_explain"
-					"value"				"1"
+				    "attribute_class" "mod_giga_airblast_recharge_time_decreased_explain"
+				    "value" "1"
 				}
 				"damage penalty"
                 {
@@ -3759,8 +3759,8 @@ Playtest weapon."
 				}
 				"overheal is infinite spy explain"
 				{
-					"mod_giga_overheal_is_infinite_spy_explain"
-					"value"					"1"
+				    "attribute_class" "mod_giga_overheal_is_infinite_spy_explain"
+				    "value" "1"
 				}
 				"sapper health bonus"
 				{
