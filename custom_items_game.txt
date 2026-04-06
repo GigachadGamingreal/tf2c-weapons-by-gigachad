@@ -31,7 +31,7 @@ Release Fire to unleash the barrage"
 		}
         "15003"
 		{
-            "name"                  "tachy double dealer explain"
+            "name"                  "tachy jump and tele explain"
             "attribute_class"       "mod_double_dealer_explain"
             "description_string"    "Jump Pads are NOT Teleporters"
             "description_format"    "value_is_additive"
