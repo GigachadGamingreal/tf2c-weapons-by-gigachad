@@ -2,19 +2,13 @@
 
 "items_game"
 {
-    //"attributes"
-    //{
-    //}
-	//"prefabs"
-	//{
-	//}
 	"items"
 	{
+		// Jarate
 		"58"
 		{
-			"name"			"Jarate"
-			"enabled"		"1"
-			"item_class"	"tf_weapon_jar"
+			"name"						"Jarate"
+			"item_class"				"tf_weapon_jar"
 			"tags"
 			{
 				"can_extinguish"		"1"
@@ -71,7 +65,7 @@
 			"mouse_pressed_sound"	"ui/item_bottle_pickup.wav"
 			"drop_sound"			"ui/item_bottle_drop.wav"
 		}
-
+		// Lens Breaker
 		"40001"
 		{
 			"name"				"heavy_sniper_weapon"
@@ -80,7 +74,7 @@
 			"item_description"	"Engineered in Mann Co.'s 'Worst Case Scenario' division. Sit back and line up your entire magazine. Fair is fair."
 			"propername"		"1"
 			
-			"item_quality"		"normal"
+			"item_quality"		"unique"
 			
 			"item_logname"		"heavy_sniper_weapon"
 			"item_iconname"		"aa_cannon"
@@ -107,42 +101,44 @@
 			{
 				"mini_crits_snipers_visible"
 				{
-					"attribute_class"		"minicrit_vs_class"
-					"value"					"2"
+					"attribute_class"	"minicrit_vs_class"
+					"value"				"2"
 				}
 				"weapon spread bonus"
 				{
-					"value" "0.65"
+					"value"				"0.65"
 				}
 				"headshot immunity"
 				{
-					"value" "1"
+					"value"				"1"
 				}
 				"minigun spinup time increased"
 				{
-					"attribute_class" "mult_minigun_spinup_time"
-					"value" "1.28"
+					"attribute_class"	"mult_minigun_spinup_time"
+					"value"				"1.28"
 				}
 				"fire rate penalty"
 				{
-					"attribute_class" "mult_postfiredelay"
-					"value"	"1.65"
+					"attribute_class"	"mult_postfiredelay"
+					"value"				"1.65"
 				}
 				"dmg taken from bullets reduced"
 				{
-					"value" "1.1"
+					"value"				"1.1"
 				}
 				"maxammo primary reduced"
-				{ "value" "0.8" }
+				{
+					"value"				"0.8"
+				}
 				"hidden separator"	"1"
 				"no damage falloff over distance"
 				{
-					"attribute_class" "mod_no_dmg_falloff"
-					"value" "1"
+					"attribute_class"	"mod_no_dmg_falloff"
+					"value"				"1"
 				}
 				"banned in medieval mode"
 				{
-					"attribute_class" "banned_in_medieval_mode"
+					"attribute_class"	"banned_in_medieval_mode"
 					"value" "1"
 				}
 				"dmg bonus vs buildings"
@@ -151,7 +147,9 @@
 					"value"				"1.3"
 				}
 				"damage bonus HIDDEN"
-				{ "value" "1.3" }
+				{
+					"value"				"1.3"
+				}
 			}
 			"static_attrs"
 			{
@@ -162,8 +160,8 @@
 				"sound_single_shot"		"Weapon_Winger.Single"
 				"sound_burst"			"Weapon_Winger.SingleCrit"
 			}
-		} // End of heavy_sniper_weapon
-
+		}
+		// Frontline Fortress
 		"40002"
 		{
 			"name"				"heavy_kevlar_secondary"
@@ -172,7 +170,7 @@
 			"item_description" 	"Is very good vest. Bullet hit vest, vest say 'Nyet'. Bullet fall down, cry like baby. -Misha"
 			"propername"		"1"
 			
-			"item_quality"		"normal"
+			"item_quality"		"unique"
 			
 			"item_logname"		"heavy_kevlar_suit"
 			"item_iconname"		"aa_cannon"
@@ -184,9 +182,11 @@
 			
 			"item_slot"			"secondary"
 			"used_by_classes"
-			{ "Heavy"	"1" }
+			{
+				"Heavy"			"1"
+			}
 			
-			"model_player"		"models/weapons/c_models/c_rocketboots_soldier.mdl"
+			"model_player"			"models/weapons/c_models/c_rocketboots_soldier.mdl"
 			"image_inventory"		"backpack/weapons/c_models/c_rocketboots_soldier"
 			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
 			"drop_sound"			"ui/item_metal_weapon_drop.wav"
@@ -194,23 +194,33 @@
 			"attributes"
 			{
 				"max health additive bonus"
-				{ "value" "100" }
+				{
+					"value"			"100"
+				}
 				"move speed penalty"
-				{ "value" "0.9" }
+				{
+					"value"			"0.9"
+				}
 				"health from healers reduced"
-				{ "value" "0.67" }
+				{
+					"value" "0.67"
+				}
 				"dmg taken from bullets reduced"
-				{ "value" "1.2" }
+				{
+					"value" "1.2"
+				}
 				"health regen"
-				{ "value" "10" }
+				{
+					"value" "10"
+				}
 				"allowed in medieval mode"
 				{
 					"attribute_class"	"allowed_in_medieval_mode"
 					"value"	"1"
 				}
 			}
-		} // End of heavy_kevlar_secondary
-
+		}
+		// Crusader's Crossbow
 		"40003"
 		{
 			"name"	"crusader_crossbow_stf2c"
@@ -247,12 +257,12 @@
 				}
 				"Reload time decreased"
 				{
-					"value" "0.95"
+					"value"			"0.95"
 				}
 				"sniper no headshots"
 				{
-					"attribute_class" "set_weapon_mode"
-					"value" "1"
+					"attribute_class"	"set_weapon_mode"
+					"value"			"1"
 				}
 				"maxammo primary reduced"
 				{
@@ -272,9 +282,8 @@
 			}
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"	"ui/item_light_gun_drop.wav"
-		} // End of crusader_crossbow_stf2c
-	} // End of items
-
+		}
+	}
 	"attributes"
 	{
 		"40001"
@@ -315,5 +324,5 @@
 			"effect_type"			"positive"
 			"stored_as_integer"		"1"
 		}
-	} // End of attributes
-} // End of items_game
+	}
+}
