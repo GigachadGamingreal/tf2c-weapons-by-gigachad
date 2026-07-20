@@ -283,7 +283,215 @@
 			"mouse_pressed_sound"	"ui/item_light_gun_pickup.wav"
 			"drop_sound"	"ui/item_light_gun_drop.wav"
 		}
+		//// ENGINEER'S HANDY-HAND BOMB - GIGACHAD GAMING
+		"40004"
+		{
+			"name"	"caberengineer"
+			"item_class"	"tf_weapon_stickbomb"
+			"tags"
+			{
+				"can_deal_damage"		"1"
+				"can_deal_gib_damage"	"1"
+			}
+			"show_in_armory"	"1"
+			"item_type_name"	"Engineer's handy-hand bomb"
+			"item_name"	"Highly Explosive Stick"
+			"item_description"	"Don't try me pardner. Im a Human-bustin' bomb!"
+			"item_logname"	"ullapool_caber"
+			"item_iconname"	"ullapool_caber"
+			"anim_slot" "MELEE_ALLCLASS"
+			"item_slot"	"melee"
+			"item_quality"	"unique"
+			"propername"	"1"
+			"min_ilevel"	"10"
+			"max_ilevel"	"10"
+			"image_inventory" "backpack/workshop/weapons/c_models/c_caber/c_caber"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"inspect_panel_dist" 				"35"			
+			"model_player"	"models/workshop/weapons/c_models/c_caber/c_caber.mdl"
+			"attach_to_hands" "1"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"static_attrs"
+			{
+				"min_viewmodel_offset"		"12 0 -17"				
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"attributes"
+			{
+				"first hit explosion explain"
+				{
+					"attribute_class"	"mod_giga_first_hit_explosion"
+					"value"				"1"
+				}
+				"single wep deploy time increased"
+				{
+					"attribute_class"	"mult_single_wep_deploy_time"
+					"value"	"2.0"
+				}
+				"cannot upgrade or repair buildings explain"
+				{
+					"attribute_class"	"mod_giga_cannot_upgrade_or_repair_buildings_explain"
+					"value"				"1"
+				}
+			}
+		}
+		//// MECHANIC'S SCHEMATIC - GIGACHAD GAMING
+		"40005"
+		{
+			"name" "fasttele"
+			"enabled"	"1"
+			"item_class"	"tf_weapon_pda_engineer_build"
+			"item_name"	"Mechanic's Schematic"
+			"item_type_name"	"#TF_Weapon_PDA_Engineer"
+			"item_description"	"You know, I used to fight Robots™ back in the day."
+			"item_slot"	"pda"
+			"item_quality"	"unique"
+			"min_ilevel"	"1"
+			"max_ilevel"	"99"
+			"show_in_armory"	"1"
+			"attach_to_hands" "1"
+			"image_inventory"	"backpack/weapons/w_models/w_builder"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/weapons/c_models/c_builder/c_builder.mdl"
+			"used_by_classes"
+			{
+				"engineer"	"1"
+			}
+			"attributes"
+			{
+				"kill eater score type"
+				{
+					"attribute_class"	"kill_eater_score_type"
+					"value" 	"3" 
+				}
+				"kill eater score type 2"
+				{
+					"attribute_class"	"kill_eater_score_type_2"
+					"value" 	"59" 
+				}
+				"kill eater score type 3"
+				{
+					"attribute_class"	"kill_eater_score_type_3"
+					"value" 	"60" 
+				}
+				"mod teleporter speed boost"
+				{
+					"attribute_class"	"mod_teleporter_speed_boost"
+					"value"	"1"
+				}
+				"bidirectional teleport"
+				{
+					"attribute_class"	"bidirectional_teleport"
+					"value"	"1"
+				}
+				"mult teleporter recharge rate"
+				{
+					"attribute_class"	"mult_teleporter_recharge_rate"
+					"value"				"1.25"
+				}
+				"teleporter cost nerf"
+				{
+					"attribute_class"	"mod_giga_teleporter_cost_nerf"
+					"value"				"1.5"
+				}
+				"hidden separator"	"1"
+				"mod teleporter cost"
+				{
+					"attribute_class"	"mod_teleporter_cost"
+					"value"				"1.5"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_metal_weapon_pickup.wav"
+			"drop_sound"		"ui/item_metal_weapon_drop.wav"
+			"visuals"
+			{
+				"animation_replacement"
+				{
+					"ACT_VM_IDLE"	"ACT_ENGINEER_PDA2_VM_IDLE"
+					"ACT_VM_DRAW"	"ACT_ENGINEER_PDA2_VM_DRAW"
+				}
+			}
+		}
+		/////// ASH ARMED - GIGACHAD GAMING
+		"40006"
+		{
+			"name"			"metalistpyro"
+			"item_class"		"tf_wearable"
+			"show_in_armory"	"1"
+			"item_type_name" 	"#TF_Wearable_Backpack"
+			"item_name"	"Ash Armed"
+			"item_description"	"Lightweight ammo reserve, tread carefully!"
+			"item_slot"		"primary"
+			"equip_region"	"back"
+			"anim_slot"	"FORCE_NOT_USED"
+			"item_quality"		"unique"
+			"propername"		"1"
+			"min_ilevel"		"10"
+			"max_ilevel"		"10"
+			"image_inventory"	"backpack/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack"
+			"image_inventory_size_w"		"128"
+			"image_inventory_size_h"		"82"
+			"model_player"	"models/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack.mdl"
+			"extra_wearable" "models/workshop/player/items/sniper/xms_sniper_commandobackpack/xms_sniper_commandobackpack.mdl"
+			"used_by_classes"
+			{
+				"pyro"	"1"
+			}
+			"attributes"
+			{
+				"max health additive bonus"
+				{
+					"attribute_class"	"add_maxhealth"
+					"value"				"50"
+				}
+				"ammo regen"
+				{
+					"attribute_class"	"addperc_ammo_regen"
+					"value"	"0.17"
+				}
+				"increased jump height"
+				{
+					"attribute_class"	"mod_jump_height"
+					"value"				"2.1"
+				}
+				"boots falling stomp"
+				{
+					"attribute_class"	"boots_falling_stomp"
+					"value"				"1"
+				}
+				"gravity mod wearer increased"
+				{
+					"attribute_class"	"gravity_mod_wearer"
+					"value"				"2"
+				}
+				"slower move speed"
+				{
+					"attribute_class"	"mod_giga_movespeed_penalty"
+					"value"				"0.7"
+				}
+				"hidden separator"	"1"
+				"allowed in medieval mode"
+				{
+					"attribute_class"	"allowed_in_medieval_mode"
+					"value"	"1"
+				}
+				"major move speed bonus"
+				{
+					"attribute_class"	"mult_player_movespeed"
+					"value"				"0.7"
+				}
+			}
+			"mouse_pressed_sound"	"ui/item_pack_pickup.wav"
+			"drop_sound"		"ui/item_pack_drop.wav"
+		}
 	}
+
 	"attributes"
 	{
 		"40001"
@@ -323,6 +531,63 @@
 			"hidden"				"0"
 			"effect_type"			"positive"
 			"stored_as_integer"		"1"
+		}
+		"40005"
+		{
+			"name"					"cannot upgrade or repair buildings explain"
+			"attribute_class"		"mod_giga_cannot_upgrade_or_repair_buildings_explain"
+			"description_string"	"Weapon cannot Speed up construction rate, Repair or Upgrade buildings"
+			"description_format"	"value_is_additive"
+			"effect_type"			"negative"
+		}
+		"40006"
+		{
+			"name"					"mod teleporter speed boost"
+			"attribute_class"		"mod_teleporter_speed_boost"
+			"description_string"	"On teleported by the teleport: Receive a speed boost for 4s"
+			"description_format"	"value_is_additive"
+			"effect_type"			"positive"
+		}
+		"40007"
+		{
+			"name"					"mult teleporter recharge rate"
+			"attribute_class"		"mult_teleporter_recharge_rate"
+			"description_string"	"%s1% slower teleporter recharge rate"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"40008"
+		{
+			"name"					"teleporter cost nerf"
+			"attribute_class"		"mod_giga_teleporter_cost_nerf"
+			"description_string"	"+%s1% increase in metal cost when constructing or upgrading teleporters"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"40009"
+		{
+			"name"					"first hit explosion explain"
+			"attribute_class"		"mod_giga_first_hit_explosion"
+			"description_string"	"The first hit will cause an explosion
+"
+			"description_format"	"value_is_additive"
+			"effect_type"			"neutral"
+		}
+		"40010"
+		{
+			"name"					"slower move speed"
+			"attribute_class"		"mod_giga_movespeed_penalty"
+			"description_string"	"%s1% slower move speed on wearer"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
+		}
+		"40011"
+		{
+			"name"					"gravity mod wearer increased"
+			"attribute_class"		"gravity_mod_wearer"
+			"description_string"	"+%s1% more gravity on wearer"
+			"description_format"	"value_is_percentage"
+			"effect_type"			"negative"
 		}
 	}
 }
